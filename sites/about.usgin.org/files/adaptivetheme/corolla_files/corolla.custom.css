@@ -1,0 +1,79 @@
+/* Add any valid CSS declarations */
+
+.region-two-66-33-second {
+width:30% !important;
+margin-left:15px !important;
+}
+
+/* General buttons */
+	a.button{
+		background: #284f6e;
+		border-radius: 1.5em;
+		padding: 1em 2em;
+		display: block;
+		font-family: arial;
+		font-weight: bold;
+		color:#ffffff;
+		text-decoration: none;
+		border:1px solid #a7a7a7;
+		width: 100%;
+		margin:0px auto;
+		/* margin-top:100px;*/
+		box-shadow: 0px 2px 1px white inset, 0px -2px 5px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 8px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+	a.button i{
+		float: right;
+		margin-top: 2px;
+	}
+	a.button:hover{
+		box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	}
+	a.button:active{
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+		background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+	}
+
+/* Newsletter Button */
+a.button-home{
+		background: #284f6e;
+		border-radius: 1.5em;
+		padding: 1em 1em; 
+		display: block;
+		font-family: arial;
+		font-weight: bold;
+		color:#ffffff;
+		text-decoration: none;
+		border:1px solid #a7a7a7;
+		width:150pt;
+		margin: auto;
+		box-shadow: 0px 2px 1px white inset, 0px -2px 5px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 5px 8px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+	a.button-home i{
+		float: right;
+		/*margin-top: 2px; */
+	}
+	a.button-home:hover{
+		box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	}
+	a.button-home:active{
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+		background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+	}
+
+/* Color for basic pages sidebar */
+.field-name-field-sidebar {
+		background-color:#f4f3ed;
+}
+
+/* This is make the entire caption show when viewing images through shadowbox */
+#sb-title, #sb-title-inner{
+height:auto;
+line-height: auto;
+}
+
+/* Padding for images on the blog */
+.image-padding{
+padding-top: 20px;
+}

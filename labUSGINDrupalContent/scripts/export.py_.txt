@@ -1,0 +1,30 @@
+import warnings
+import MySQLdb
+import urllib2
+
+def write_data(fid, text, outpath):
+   of = open(outpath + fid + '-iso19139.xml', 'w')
+   of.write(text)
+   of.close()
+   
+outpath = 'C:/inetpub/resources/azgsDocRepository/'
+nids = []
+sql = "SELECT node.nid AS nid FROM node node WHERE (node.type in ('ct_metadata_dlio')) AND (node.status <> 0)"
+
+conn = MySQLdb.connect (host = "kyanite", user = "azgsrepository", passwd = "gHn1dPVdocKPtsc9u1RT",  db = "azgsrepository")
+cursor = conn.cursor()
+cursor.execute(sql)
+rows = cursor.fetchall()
+for row in rows:
+   nid = str(row[0]).strip()
+   nids.append(nid)
+
+for nid in nids:
+   url = 'http://repository.azgs.az.gov/uri_gin/azgs/dlio/%s/iso19139.xml' % nid
+   fh = urllib2.urlopen(url)
+   xml = fh.read()
+   fh.close()
+   write_data(nid, xml, outpath)
+
+cursor.close()
+conn.close()

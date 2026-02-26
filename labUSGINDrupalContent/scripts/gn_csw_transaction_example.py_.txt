@@ -1,0 +1,96 @@
+#!/usr/bin/env python
+# this is gn_csw_transaction_example.py
+
+"""
+Example CSW 2.0.2 transaction with authentication Python script for GeoNetwork
+Tested with GeoNetwork 2.4.1 on Windows
+
+Python 2.6
+Wolfgang Grunberg
+Arizona Geological Survey
+10/20/2009
+"""
+
+# Library Imports
+import urllib
+import urllib2
+import cookielib
+
+# module globals and constants
+__author__ = "Wolfgang Grunberg"
+__credits__ = ["Wolfgang Grunberg", "the Internets"]
+__email__ = "wgrunberg@azgs.az.gov"
+__status__ = "Prototype"                  # "Prototype", "Development", or "Production"
+
+# GeoNetwork constants
+gn_username = "admin"
+gn_password = "admin"
+gn_baseURL = "http://localhost:8080"
+gn_loginURI = "/geonetwork/srv/en/xml.user.login"
+gn_logoutURI = "/geonetwork/srv/en/xml.user.logout"
+gn_cswURI = "/geonetwork/srv/en/csw"
+
+
+def gn_csw_transaction():
+    """
+    Execute GeoNetwork authentication and CSW transaction post
+    """
+    # HTTP header for authentication 
+    header_urlencode = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+    # HTTP header for CSW request
+    header_xml = {"Content-type": "application/xml", "Accept": "text/plain"}
+    # authentication Post parameters
+    post_parameters = urllib.urlencode({"username": gn_username, "password": gn_password})
+    
+    # Sample CSW transactions
+    xml_request = "\
+            "
+    
+    # log in URL
+    url_in = gn_baseURL+gn_loginURI
+    # log out URL
+    url_out = gn_baseURL+gn_logoutURI
+    # CSW URL
+    url_csw = gn_baseURL+gn_cswURI
+    
+    
+    # first, always log out 
+    request = urllib2.Request(url_out)
+    response = urllib2.urlopen(request)
+    #print response.read()       # debug
+    
+    # send authentication request
+    request = urllib2.Request(url_in, post_parameters, header_urlencode)
+    response = urllib2.urlopen(request)
+    # a basic memory-only cookie jar instance
+    cookies = cookielib.CookieJar()
+    cookies.extract_cookies(response,request)
+    cookie_handler= urllib2.HTTPCookieProcessor( cookies )
+    # a redirect handler
+    redirect_handler= urllib2.HTTPRedirectHandler()
+    # save cookie and redirect handler for future HTTP Posts
+    opener = urllib2.build_opener(redirect_handler,cookie_handler)
+    
+    # CSW request
+    request = urllib2.Request(url_csw, xml_request2, header_xml)
+    response = opener.open(request)
+    # CSW respons
+    xml_response = response.read()
+    print xml_response  # debug
+    
+    # Do something with the response. For example:
+    #xmldoc = minidom.parseString(xml_response)
+    #for node in xmldoc.getElementsByTagName('ows:ExceptionText'):       # display  value(s)
+    #    print "    EXCEPTION: "+node.firstChild.nodeValue
+    #xmldoc.unlink()     # cleanup DOM for improved performance
+    
+    # more CSW requests if desired
+    
+    # Last, always log out
+    request = urllib2.Request(url_out)
+    response = opener.open(request)
+    #print response.read()       # debug
+    
+    
+if __name__=="__main__":
+    gn_csw_transaction()

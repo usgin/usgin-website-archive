@@ -1,0 +1,633 @@
+{
+  "total_external_links": 736,
+  "unique_urls_checked": 142,
+  "dead_count": 77,
+  "live_count": 65,
+  "dry_run": false,
+  "dead_links": {
+    "http://azgs.az.gov": "ConnectionError",
+    "http://azgs.az.gov/": "ConnectionError",
+    "http://catalog.stategeothermaldata.org/": "ConnectionError",
+    "http://catalog.usgin.or/search": "ConnectionError",
+    "http://catalog.usgin.org/geoportal/catalog/main/home.page/": "ConnectionError",
+    "http://catalog.usgin.org/search": "ConnectionError",
+    "http://catalog.usgin.org/search/": "ConnectionError",
+    "http://data.geothermaldatasystem.org/": "ConnectionError",
+    "http://geoserver.org/display/GEOS/Welcome": "404",
+    "http://grass.fbk.eu/": "ConnectionError",
+    "http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html/content/glossary#//003r00000001000000.htm": "404",
+    "http://lab.usgin.org": "ConnectionError",
+    "http://lab.usgin.org/": "ConnectionError",
+    "http://lab.usgin.org/applications/amazon-web-services": "ConnectionError",
+    "http://lab.usgin.org/applications/apache-tomcat": "ConnectionError",
+    "http://lab.usgin.org/applications/django": "ConnectionError",
+    "http://lab.usgin.org/applications/doc/2nd-version-csw-client-application": "ConnectionError",
+    "http://lab.usgin.org/applications/drupal": "ConnectionError",
+    "http://lab.usgin.org/applications/geoserver": "ConnectionError",
+    "http://lab.usgin.org/applications/postgresql-and-postgis": "ConnectionError",
+    "http://lab.usgin.org/applications/python": "ConnectionError",
+    "http://lab.usgin.org/groups/drupal-development/creating-iso-19139-metadata-through-drupal-views-and-views-bonus-pack": "ConnectionError",
+    "http://lab.usgin.org/groups/drupal-development/drupal-content-types-used-usgin-document-repository": "ConnectionError",
+    "http://lab.usgin.org/groups/presentations-and-posters/presentation-usgs-menlo-park-04152010": "ConnectionError",
+    "http://lab.usgin.org/gsmlp": "ConnectionError",
+    "http://lab.usgin.org/party/marine-metadata-interoperability-project": "ConnectionError",
+    "http://lab.usgin.org/profiles/geosciml-wfs-architecture": "ConnectionError",
+    "http://lab.usgin.org/profiles/profile-basic-wells-and-borehole-information-service": "ConnectionError",
+    "http://lab.usgin.org/profiles/usgin-csw-profile-home": "ConnectionError",
+    "http://lab.usgin.org/profiles/usgin-iso-metadata-profile": "ConnectionError",
+    "http://lab.usgin.org/profiles/usgin-uniform-resource-identifier": "ConnectionError",
+    "http://lab.usgin.org/profiles/usgin-uniform-resource-identifier-profile": "ConnectionError",
+    "http://lab.usgin.org/profiles/usgin-wms-profile": "ConnectionError",
+    "http://lab.usgin.org/profiles/usginvocabularyservice": "ConnectionError",
+    "http://lab.usgin.org/standards/esri-map-service": "ConnectionError",
+    "http://lab.usgin.org/standards/fgdc-content-standard-digital-geospatial-metadata-csdgm": "ConnectionError",
+    "http://lab.usgin.org/standards/geography-markup-language": "ConnectionError",
+    "http://lab.usgin.org/standards/geosciml-xml-markup-language": "ConnectionError",
+    "http://lab.usgin.org/standards/ietf-rfc-3986-universal-resource-identifier": "ConnectionError",
+    "http://lab.usgin.org/standards/isle-metadata-initiative-imdi": "ConnectionError",
+    "http://lab.usgin.org/standards/iso-19115": "ConnectionError",
+    "http://lab.usgin.org/standards/iso-19119": "ConnectionError",
+    "http://lab.usgin.org/standards/iso-19139": "ConnectionError",
+    "http://lab.usgin.org/standards/ogc-catalog-service-web-csw-202": "ConnectionError",
+    "http://lab.usgin.org/standards/ogc-csw-apiso-ogc-iso19115iso19119-application-profile-csw-20": "ConnectionError",
+    "http://lab.usgin.org/standards/w3c-extensible-markup-language-xml": "ConnectionError",
+    "http://lab.usgin.org/standards/w3c-skos": "ConnectionError",
+    "http://mw.usgin.org/": "ConnectionError",
+    "http://repository.stategeothermaldata.org/": "ConnectionError",
+    "http://repository.stategeothermaldata.org/repository/": "ConnectionError",
+    "http://repository.usgin.org/": "ConnectionError",
+    "http://repository.usgin.org/uri_gin/usgin/dlio/331": "ConnectionError",
+    "http://repository.usgin.org/uri_gin/usgin/dlio/335": "ConnectionError",
+    "http://repository.usgin.org/uri_gin/usgin/dlio/337": "ConnectionError",
+    "http://repository.usgin.org/uri_gin/usgin/dlio/340": "ConnectionError",
+    "http://repository.usgin.org/uri_gin/usgin/dlio/499": "ConnectionError",
+    "http://resource.geosciml.org/201202/": "404",
+    "http://resource.geosciml.org/201202/Vocab2012html/": "404",
+    "http://resource.geosciml.org/201202/Vocab2012html/SimpleLithology201012.html": "404",
+    "http://schemas.usgin.org/": "ConnectionError",
+    "http://schemas.usgin.org/home/": "ConnectionError",
+    "http://search.usgin.org/": "ConnectionError",
+    "http://services.usgin.org/track/map": "ConnectionError",
+    "http://tech.usgin.org/": "ConnectionError",
+    "http://www.azgs.az.gov": "ConnectionError",
+    "http://www.cgi-iugs.org/tech_collaboration/geosciml.html": "404",
+    "http://www.colorado.edu/geography/gcraft/notes/intro/intro.html": "404",
+    "http://www.earthmagazine.org/content/sara-e-pratt": "404",
+    "http://www.esri.com/software/arcgis/explorer/index.html": "404",
+    "http://www.guyzingear.com/gngsvr1.php?topicid=58361": "404",
+    "http://www.snowflakesoftware.com/": "ConnectionError",
+    "http://www.stategeothermaldata.org": "ConnectionError",
+    "http://www.stategeothermaldata.org/": "ConnectionError",
+    "http://www.stategothermaldata.org": "ConnectionError",
+    "https://mollom.com/web-service-privacy-policy": "404",
+    "https://www.mollom.com/web-service-privacy-policy": "404",
+    "https://www.seegrid.csiro.au/wiki/CGIModel/GeoSciMLPortrayalViewModel": "ConnectionError"
+  },
+  "files_modified": {
+    "contact\\NGDS-Atlas\\index.html": [
+      "http://tech.usgin.org/",
+      "https://www.mollom.com/web-service-privacy-policy",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "contact\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "content\\about-usgin\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\about\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\accessing-usgin\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://catalog.usgin.org/search/",
+      "http://www.esri.com/software/arcgis/explorer/index.html",
+      "http://grass.fbk.eu/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\data-provider-workflow\\index.html": [
+      "http://search.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://www.mysql.com/",
+      "http://geoserver.org/display/GEOS/Welcome",
+      "http://nsf.gov",
+      "http://azgs.az.gov",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "content\\documents\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\explore\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\faq\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://services.usgin.org/track/map",
+      "http://catalog.usgin.or/search",
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\geodatabase-arcmap-part-1\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\geodatabase-arcmap-part-2\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html/content/glossary#//003r00000001000000.htm",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\glossary\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://www.stategeothermaldata.org",
+      "http://www.stategeothermaldata.org",
+      "http://azgs.az.gov",
+      "http://www.colorado.edu/geography/gcraft/notes/intro/intro.html",
+      "http://azgs.az.gov/",
+      "http://www.stategothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\importing-your-data-geodatabase-part-2\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://www.stategeothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\navigation-panel\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/geoportal/catalog/main/home.page/",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\ngds-content-model-tutorial\\index.html": [
+      "http://search.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://www.stategeothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "content\\open-data\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usage\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-best-practices\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://resource.geosciml.org/201202/",
+      "http://resource.geosciml.org/201202/Vocab2012html/",
+      "http://resource.geosciml.org/201202/Vocab2012html/SimpleLithology201012.html",
+      "http://www.snowflakesoftware.com/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-data-provider-workflow\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://catalog.usgin.org/search",
+      "http://catalog.usgin.org/search",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-objectives\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://catalog.usgin.org/search",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-open-data-compliance-guide\\index.html": [
+      "http://tech.usgin.org/",
+      "https://mollom.com/web-service-privacy-policy",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "content\\usgin-overview\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-software-applications\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://data.geothermaldatasystem.org/",
+      "http://lab.usgin.org/applications/doc/2nd-version-csw-client-application",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-specifications\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://lab.usgin.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\usgin-web-services-tutorial\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://www.stategeothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\using-usgin\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://catalog.usgin.org/search",
+      "http://catalog.stategeothermaldata.org/",
+      "http://lab.usgin.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\who-uses-usgin\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\xml-namespaces-and-prefixes\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "content\\xml-review\\index.html": [
+      "http://search.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "documentation\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://repository.usgin.org/uri_gin/usgin/dlio/335",
+      "http://repository.usgin.org/uri_gin/usgin/dlio/337",
+      "http://repository.usgin.org/uri_gin/usgin/dlio/499",
+      "http://repository.usgin.org/uri_gin/usgin/dlio/340",
+      "http://schemas.usgin.org/home/",
+      "http://repository.usgin.org/uri_gin/usgin/dlio/331",
+      "http://nsf.gov",
+      "http://azgs.az.gov",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "glossary\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://www.stategeothermaldata.org",
+      "http://azgs.az.gov",
+      "http://azgs.az.gov/",
+      "http://www.stategothermaldata.org",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "index.html": [
+      "http://lab.usgin.org",
+      "http://www.azgs.az.gov"
+    ],
+    "index.php\\q_option_com_content_view_article_id_48_Itemid_28.html": [
+      "http://lab.usgin.org",
+      "http://lab.usgin.org/standards/isle-metadata-initiative-imdi",
+      "http://lab.usgin.org/party/marine-metadata-interoperability-project",
+      "http://lab.usgin.org/groups/presentations-and-posters/presentation-usgs-menlo-park-04152010",
+      "http://lab.usgin.org/groups/drupal-development/creating-iso-19139-metadata-through-drupal-views-and-views-bonus-pack",
+      "http://lab.usgin.org/groups/drupal-development/drupal-content-types-used-usgin-document-repository",
+      "http://lab.usgin.org"
+    ],
+    "node\\11\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\12\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\14\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government"
+    ],
+    "node\\17\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\1\\index.html": [
+      "http://tech.usgin.org/",
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\2\\index.html": [
+      "http://tech.usgin.org/"
+    ],
+    "node\\3\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\45\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "node\\47\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html/content/glossary#//003r00000001000000.htm",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "node\\7\\index.html": [
+      "http://tech.usgin.org/",
+      "http://lab.usgin.org/"
+    ],
+    "node\\8\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.earthmagazine.org/content/sara-e-pratt",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\9\\done\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "node\\9\\index.html": [
+      "http://tech.usgin.org/",
+      "https://www.mollom.com/web-service-privacy-policy"
+    ],
+    "opportunities\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "opportunities\\software-development-specialist\\index.html": [
+      "http://tech.usgin.org/"
+    ],
+    "page\\about\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\beyond-open-data\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\host-your-own-data\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\how-usgin-works\\index.html": [
+      "http://tech.usgin.org/",
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\join-our-newsletter\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\ngds-atlas\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\open-data-solutions\\index.html": [
+      "http://tech.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "page\\usgin-action-ngds\\index.html": [
+      "http://tech.usgin.org/",
+      "http://www.earthmagazine.org/content/sara-e-pratt",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "specifications\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://lab.usgin.org/applications/amazon-web-services",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/applications/apache-tomcat",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/applications/django",
+      "http://lab.usgin.org/",
+      "http://drupal.org/",
+      "http://lab.usgin.org/applications/drupal",
+      "http://lab.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://lab.usgin.org/applications/geoserver",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/applications/postgresql-and-postgis",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/applications/postgresql-and-postgis",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/applications/python",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/esri-map-service",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/ogc-catalog-service-web-csw-202",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/fgdc-content-standard-digital-geospatial-metadata-csdgm",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/iso-19115",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/iso-19119",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/iso-19139",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/geography-markup-language",
+      "http://lab.usgin.org/",
+      "http://www.cgi-iugs.org/tech_collaboration/geosciml.html",
+      "http://lab.usgin.org/standards/geosciml-xml-markup-language",
+      "http://lab.usgin.org/",
+      "https://www.seegrid.csiro.au/wiki/CGIModel/GeoSciMLPortrayalViewModel",
+      "http://lab.usgin.org/gsmlp",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/ietf-rfc-3986-universal-resource-identifier",
+      "http://lab.usgin.org/",
+      "http://www.w3.org/TR/REC-xml/",
+      "http://lab.usgin.org/standards/w3c-extensible-markup-language-xml",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/geosciml-wfs-architecture",
+      "http://lab.usgin.org/profiles/geosciml-wfs-architecture",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/standards/ogc-csw-apiso-ogc-iso19115iso19119-application-profile-csw-20",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/profile-basic-wells-and-borehole-information-service",
+      "http://lab.usgin.org/profiles/profile-basic-wells-and-borehole-information-service",
+      "http://lab.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://lab.usgin.org/profiles/usgin-csw-profile-home",
+      "http://lab.usgin.org/profiles/usgin-csw-profile-home",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/usginvocabularyservice",
+      "http://lab.usgin.org/profiles/usginvocabularyservice",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/usgin-wms-profile",
+      "http://lab.usgin.org/profiles/usgin-wms-profile",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/usgin-iso-metadata-profile",
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/profiles/usgin-iso-metadata-profile",
+      "http://lab.usgin.org/",
+      "http://lab.usgin.org/profiles/usgin-uniform-resource-identifier-profile",
+      "http://lab.usgin.org/profiles/usgin-uniform-resource-identifier",
+      "http://lab.usgin.org/",
+      "http://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "http://lab.usgin.org/standards/w3c-skos",
+      "http://lab.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "tutorial_view_page\\index.html": [
+      "http://repository.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://catalog.usgin.org/search",
+      "http://mw.usgin.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ],
+    "tutorials\\index.html": [
+      "http://search.usgin.org/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://schemas.usgin.org/home/",
+      "http://www.stategeothermaldata.org/",
+      "http://repository.stategeothermaldata.org/",
+      "http://data.geothermaldatasystem.org/",
+      "http://repository.stategeothermaldata.org/repository/",
+      "http://schemas.usgin.org/",
+      "http://lab.usgin.org/applications/doc/2nd-version-csw-client-application",
+      "http://nsf.gov",
+      "http://azgs.az.gov",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361",
+      "http://www.guyzingear.com/gngsvr1.php?topicid=58361"
+    ],
+    "user\\index.html": [
+      "http://catalog.usgin.org/search/",
+      "http://lab.usgin.org/",
+      "http://repository.usgin.org/",
+      "http://www.stategeothermaldata.org/",
+      "http://nsf.gov",
+      "http://azgs.az.gov"
+    ]
+  },
+  "restored_false_positives": {
+    "http://drupal.org/": "403",
+    "http://nsf.gov": "ConnectionError",
+    "http://www.mysql.com/": "403",
+    "http://www.w3.org/TR/2009/REC-skos-reference-20090818/": "403",
+    "http://www.w3.org/TR/REC-xml/": "403",
+    "http://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government": "403"
+  },
+  "note": "Links to drupal.org, mysql.com, w3.org, whitehouse.gov, nsf.gov were restored (they block bots with 403 but are live)."
+}

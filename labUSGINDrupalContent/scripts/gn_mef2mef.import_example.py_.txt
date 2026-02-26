@@ -1,0 +1,161 @@
+#!/usr/bin/env python
+# this is gn_mef2mef.import_example.py
+
+"""
+Example script to load Metadata Exchange Format (MEF) 1.1 files into GeoNetwork through a multipart/form-data POST
+Tested with GN 2.4.2
+
+External MultipartPostHandler.py Library:
+http://peerit.blogspot.com/2007/07/multipartposthandler-doesnt-work-for.html
+based on http://pipe.scs.fsu.edu/PostHandler/MultipartPostHandler.py
+
+MEF files are ZIP archives with the following structure:
++-<uuid>.mef        zip archive with the metadata's UUID (must be valid) as the file name
+ | -info.xml        GeoNetwork specific metadata such as privileges, related data & thumbnail image files, etc.
+ | -metadata.xml    ISO 19139 metadata record
+ | +public          directory with public thumbnail and data files - can be empty
+ | +private         directory with private (GN authentication required) data files such as shape files etc. - can be empty
+
+Usage:
+
+Python 2.6
+Wolfgang Grunberg
+Arizona Geological Survey
+11/06/2009
+"""
+
+# Library Imports (not all may be needed)
+import os
+import sys
+import httplib
+import urllib
+import urllib2
+import logging
+import cProfile
+import cookielib
+import shutil
+import zipfile
+import mimetypes
+import MultipartPostHandler     # External MultipartPostHandler.py library 
+from xml.dom import minidom
+from xml.dom import Node
+from time import strftime
+
+
+# module globals and constants
+#  globals
+__author__ = "Wolfgang Grunberg"
+__copyright__ = "Copyright 2009, Arizona Geological Survey"
+__credits__ = ["Wolfgang Grunberg", "the Internets"]
+__license__ = "GPL"
+__version__ = "1.0.0"
+__maintainer__ = "Wolfgang Grunberg"
+__email__ = "wgrunberg@azgs.az.gov"
+__status__ = "Prototype"                  # "Prototype", "Development", or "Production"
+
+
+# some settings
+
+# MEF metadata folder path
+mef_path = "C:\\tmp\\gn_mef\\"
+
+# temporary work location
+tmp_path = "C:\\tmp\\"          # Temporary workspace to place MEF content before zipping up
+mef_dir_name = "temp_mef\\"     # Temporary directory that is created and deleted
+
+# GeoNetwork
+gn_servlet_url = "http://localhost:8080/geonetwork"
+gn_username = "admin"
+gn_password = "admin"
+gn_csw = "/geonetwork/srv/en/csw"
+gn_xml_login = "/srv/en/xml.user.login"
+gn_xml_logout = "/srv/en/xml.user.logout"
+gn_mef_import = "/srv/en/mef.import"
+
+# log in URL
+gn_login_url = gn_servlet_url+gn_xml_login
+# log out URL
+gn_logout_url = gn_servlet_url+gn_xml_logout
+
+
+def mefImport():
+    """
+    Import MEF file into GeoNetwork via a multipart/form-data POST to the mef.import service
+    """
+    
+    print "***** START Import MEF "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+    
+    # HTTP header for authentication 
+    header_urlencode = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+    # authentication Post parameters
+    post_parameters = urllib.urlencode({"username": gn_username, "password": gn_password})
+    
+    # first, always log out 
+    request = urllib2.Request(gn_servlet_url+gn_xml_logout)
+    response = urllib2.urlopen(request)
+    print "    First, log out: "
+    print response.read()
+    
+    # send authentication request
+    request = urllib2.Request(gn_servlet_url+gn_xml_login, post_parameters, header_urlencode)
+    response = urllib2.urlopen(request)
+    print "    Login as "+gn_username+" to GeoNetwork: "
+    print response.read()
+    # a basic memory-only cookie jar instance
+    cookies = cookielib.CookieJar()
+    cookies.extract_cookies(response,request)
+    cookie_handler= urllib2.HTTPCookieProcessor( cookies )
+    # a redirect handler
+    redirect_handler= urllib2.HTTPRedirectHandler()
+    # save cookie and redirect handler for future HTTP multipart/form-data POSTs
+    opener = urllib2.build_opener(redirect_handler,MultipartPostHandler.MultipartPostHandler,cookie_handler)
+    
+    # get list of file names from MEF directory
+    try:
+        dir = os.listdir(mef_path)
+        #print dir    #debug
+    except os.error:
+        print "    EXCEPTION: MEF metadata directory does not exits - %s" % mef_path
+        return
+    
+    # go through each MEF file
+    for file_name in dir:
+        print "    Working on "+ file_name
+        
+        # open MEF file
+        try:
+            mef_file = open(mef_path+file_name, 'rb').read()
+        except:
+            print "    EXCEPTION: Error: could not open file %s for reading" % file_name
+            return
+        
+        # Build the POST request
+        #params = {'mefFile':mef_file}   # I do not know why this does not work for me
+        params = {'mefFile':open(mef_path+file_name, 'rb')}     # This does work
+        # have to use an authenticated opener for session handling
+        #opener = urllib2.build_opener(MultipartPostHandler.MultipartPostHandler)   # creates new session
+        urllib2.install_opener(opener)      # uses existing session
+        request = urllib2.Request(gn_servlet_url+gn_mef_import, params)
+        try:
+            response = urllib2.urlopen(request)
+            print "    Submit MEF file "+response.read().strip()
+        except urllib2.URLError, e:
+            print "    EXCEPTION: File upload failed - "
+            print e
+    
+    
+    # Last, always log out
+    request = urllib2.Request(gn_servlet_url+gn_xml_logout)
+    response = opener.open(request)
+    print "    Last, log out: "
+    print response.read()
+    
+    print "***** END Import MEF "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+
+
+if __name__=="__main__":
+    mefImport()
+
+    #cProfile.run('etl()')      # execution performance information
+
+

@@ -1,0 +1,282 @@
+
+/* Background */
+body {
+  background-color: #f4f3ed;
+}
+body.corolla .color-form {
+  max-width: 100%;
+}
+
+/* Text */
+body,
+#site-name a,
+h1.page-title,
+.node h2.node-title,
+.node h1.node-title a,
+.node h2.node-title a,
+.comment h3.comment-title a,
+.tabs ul.tabs li a,
+pre,
+code,
+samp,
+var,
+table.update tr,
+table.system-status-report tr {
+  color: #383838;
+}
+#site-name a::-moz-selection {
+  background-color: #383838;
+}
+#site-name a::selection {
+  background-color: #383838;
+}
+.node-title a::-moz-selection {
+  background-color: #383838;
+}
+.node-title a::selection {
+  background-color: #383838;
+}
+
+/* Links */
+a,
+a.active,
+li a.active {
+  color: #2f56bd;
+}
+legend {
+  background-color: #2f56bd;
+  color: #ffffff;
+}
+
+/* Link hovered */
+a:hover,
+a:focus,
+a.active:hover,
+a.active:focus,
+li a.active:hover,
+li a.active:focus {
+  color: #de4c01;
+  border-bottom-color: #de4c01;
+}
+.node h1.node-title a:hover,
+.node h2.node-title a:hover {
+  color: #de4c01;
+}
+
+/* Menu bar */
+#menu-bar-wrapper {
+  background: #284f6d;
+}
+.nav .block-menu ul li a,
+.nav .block-menu ul li a:visited {
+  color: #fdfcfc;
+}
+.nav .block-menu ul a:focus,
+.nav .block-menu ul a:hover,
+.nav .block-menu ul a:active,
+.nav .block-menu ul a:visited {
+  background: #193449;
+}
+.nav .block-menu ul li a.active {
+  color: #284f6d;
+  background-color: #f4f3ed;
+}
+
+/* Superfish Skin - we keep the Superfish skin seperate so we can special case
+   if we really need to */
+.sf-menu.sf-style-default a {
+   border: 0;
+   color: #fdfcfc;
+}
+.sf-menu.sf-style-default li.last a {
+}
+.sf-menu.sf-style-default a,
+.sf-menu.sf-style-default a:visited {
+  color: #fdfcfc;
+}
+.sf-menu.sf-style-default span.sf-description {
+  color: #fefeef;
+}
+.sf-menu.sf-style-default li li,
+.sf-menu.sf-style-default.sf-navbar li ul {
+  background-color: #284f6d;
+  opacity:0.925;
+  filter:alpha(opacity=92.5);
+}
+.sf-menu.sf-style-default li li li {
+  background-color: #284f6d;
+}
+.sf-menu.sf-style-default li {
+  background: transparent;
+}
+.sf-menu.sf-style-default.sf-navbar {
+  background: #284f6d;
+}
+.sf-menu.sf-style-default li a,
+.sf-menu.sf-style-default li a:visited {
+  color: #fdfcfc;
+}
+.sf-menu.sf-style-default li:hover,
+.sf-menu.sf-style-default li.sfHover,
+.sf-menu.sf-style-default a:focus,
+.sf-menu.sf-style-default a:hover,
+.sf-menu.sf-style-default a:active {
+  background-color: #193449;
+}
+.sf-menu.sf-style-default .active-trail.sf-depth-1,
+.sf-menu.sf-style-default .sf-depth-1 > a.active {
+  color: #284f6d;
+  background-color: transparent;
+}
+#menu-bar-wrapper .sf-menu.sf-style-default .active-trail.sf-depth-1,
+#menu-bar-wrapper .sf-menu.sf-style-default .sf-depth-1 > a.active {
+  background-color: #f4f3ed;
+}
+.sf-menu.sf-style-default.sf-navbar li ul li ul {
+  background-color: transparent;
+}
+
+/* Region header menus */
+.region-header .block-menu li a,
+.region-header .sf-depth-1 > a {
+  border-bottom: 3px solid #e8d497;
+}
+.region-header .block-menu ul li a,
+.region-header .block-menu ul li a:visited {
+  color: #284f6d;
+}
+.region-header .block-menu li a:hover,
+.region-header .block-menu li a:focus,
+.region-header .block-menu li a:active {
+  color: #fdfcfc !important;
+  border-color: #284f6d !important;
+  background-color: #193449;
+}
+
+.region-header .sf-depth-1 > a:hover,
+.region-header .sf-depth-1 > a:focus {
+  border-color: #284f6d !important;
+}
+
+.region-header .sf-menu.sf-style-default .active-trail.sf-depth-1,
+.region-header .sf-menu.sf-style-default .sf-depth-1 > a.active {
+  color: #fdfcfc;
+  background-color: #193449;
+}
+.region-header .sf-menu.sf-style-default li li a,
+.region-header .sf-menu.sf-style-default li li a:visited {
+  color: #fdfcfc;
+  border: 0 !important;
+}
+
+
+/* Tabs */
+ul.primary li a,
+ul.primary li a:hover,
+ul.primary li a:focus {
+  border-color: #f6e8bd;
+}
+ul.primary li.active a {
+  border-color: #f6e8bd #f6e8bd #ffffff;
+}
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background: #ffffff;
+}
+
+/* Form inputs */
+input.form-select,
+input.form-text,
+input.form-submit {
+  border: 1px solid #e8d497;
+}
+.form-text:focus,
+.form-checkbox:focus,
+.form-radio:focus,
+.form-select:focus {
+  background: #ffffff;
+}
+textarea:focus {
+  background: #ffffff;
+}
+#autocomplete ul {
+  background: #ffffff;
+  color: #383838;
+}
+#autocomplete ul div:hover {
+  background: #383838;
+  color: #ffffff;
+}
+/* Slogan */
+#site-slogan {
+  color: #383838;
+}
+#site-slogan::selection {
+  background-color:  #383838;
+}
+#site-slogan::-moz-selection {
+  background-color:  #383838;
+}
+
+/* Poll */
+.poll .bar .foreground {
+  background-color: #383838 !important;
+}
+.block-poll .poll .percent {
+  color: #ffffff;
+}
+
+/* Border (gray) */
+.content-style {
+  border: 1px solid #f6e8bd;
+}
+
+/* Region block borders (uncomment to enable).
+   The rounded corners are already accounted for in corolla.settings.style.css */
+/*
+.sidebar .block-inner,
+.region-highlighted .block-inner,
+.four-4x25 .block-inner,
+.three-3x33 .block-inner {
+  border: 1px solid #f6e8bd;
+  padding: 10px;
+}
+*/
+
+/* Border strong (dark gray) */
+#sidebar-first input,
+#sidebar-second input {
+  border: 1px solid #e8d497;
+}
+.tabs ul.tabs li a {
+  border: 1px solid #e8d497;
+}
+
+
+/* Verticle tabs */
+ul.vertical-tabs-list li a {
+  background-color: #f4f3ed;
+}
+
+/* Block title */
+.block h2,
+h2 {
+  color: #383838;
+}
+.block h2::selection {
+  color: #ffffff;
+  background-color: #383838;
+}
+.block h2::-moz-selection {
+  background-color: #383838;
+  color: #ffffff;
+}
+
+/* Fieldset */
+fieldset {
+  background-color: #fbfbf8;
+}
+/* Fieldset border */
+fieldset {
+  border: 1px solid #ddd7b6;
+}

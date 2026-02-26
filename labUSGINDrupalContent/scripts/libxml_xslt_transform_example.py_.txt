@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+# this is libxml_xslt_transform_example.py
+
+"""
+Example XSLT transformation script that uses the Gnome libxml XML C parser and toolkit
+
+On Windows, Python can make use of the libxml2 and libxslt C libraries (http://www.xmlsoft.org/) through the
+following Python bindings http://users.skynet.be/sbi/libxml-python/. Other bindings can be found here http://codespeak.net/lxml/. The Windows installer includes the C libraries in form of DLLs.
+Most Linux distributions already include the C libraries.
+
+Usage:
+
+Python 2.6
+Wolfgang Grunberg
+Arizona Geological Survey
+11/09/2009
+"""
+
+# Library Imports
+import sys
+import libxml2      # binding to C library of same name http://www.xmlsoft.org
+import libxslt      # binding to C library of same name http://www.xmlsoft.org
+
+
+# Some variables
+transform_xslt = "C:\\tmp\\transform.xslt"
+source_xml = "C:\\tmp\\source.xml"
+out_xml = "C:\\tmp\\out.xml"
+
+def xslt_transform():
+    styledoc = libxml2.parseFile(transform_xslt)
+    style = libxslt.parseStylesheetDoc(styledoc)
+    doc = libxml2.parseFile(source_xml)
+    # XSLT transform with parameters
+    #result = style.applyStylesheet(doc, {"parameter1":"'1'","parameter2":"'string'"})
+    # XSLT transform without parameters
+    result = style.applyStylesheet(doc, None)   #
+    style.saveResultToFilename(out_xml, result, 0)      # save to file
+    result_xml = style.saveResultToString(result)       # save to string
+    
+    # cleanup - you are dealing with C libraries 
+    style.freeStylesheet()
+    doc.freeDoc()
+    result.freeDoc()
+    
+    print result_xml
+
+if __name__=="__main__":
+    xslt_transform()

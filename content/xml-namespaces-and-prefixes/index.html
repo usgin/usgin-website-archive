@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html dir="ltr" lang="en" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta about="/content/xml-namespaces-and-prefixes" content="XML Namespaces and Prefixes" property="dc:title"/>
+<meta about="/content/xml-namespaces-and-prefixes" content="0" datatype="xsd:integer" property="sioc:num_replies"/>
+<link href="../../sites/usgin.org/files/USGIN_logo-relief-icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<link href="../xml-tutorial/index.html" rel="up"/>
+<link href="../xml-review/index.html" rel="next"/>
+<link href="../xml-attributes/index.html" rel="prev"/>
+<link href="index.html" rel="canonical"/>
+<meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+<link href="../../node/70/index.html" rel="shortlink"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<title>XML Namespaces and Prefixes | USGIN</title>
+<link href="../../sites/usgin.org/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css" media="screen" rel="stylesheet" type="text/css"/>
+<style media="print">#sb-container{position:relative;}#sb-overlay{display:none;}#sb-wrapper{position:relative;top:0;left:0;}#sb-loading{display:none;}
+</style>
+<link href="../../sites/usgin.org/files/css/css_46QGmMqjVc_YTx9u4xYolLTy2B3BpaGpo8YSjZBT6-U.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_eeveVqU41w1S1ELhaV4bhbS7MFJbXVcDN6Mj47YM7xY.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_WkIQlS2V8h4Vh16HARhGTGX8u2nA_FzvuTZ5-DXLwaQ.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_91qG6FROoMymZOYwz3SJN42Q92mgM6iOb6GKOxSTh18.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_5_EBsvYf_U3gqgv1Idal1sImw7zcXB1kaIR6NOugp8o.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_x2rUjMjgzUJSI2QS_CYLUFJmXs0VH_atp9wTSqhL-pE.css" media="only screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_EVQoUsMQ9NbQIRKIelZaauOTXwp4T9vQDW73uShE0Go.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_oQrDix5EBP5CTAkc0Z64pkJfGKOFCjTJ0Txot4eBax0.css" media="only screen" rel="stylesheet" type="text/css"/>
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_WlIJMnYeT0-vKQbaUsXRf4C9pNv9ClsMam3ay7FJ0PU.css" media="screen" />
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_wil2VZHAky4m54MyLVpgiMX_IQ_4jrIPsVv8FFt_U9I.css" media="screen" />
+<![endif]-->
+<script src="../../sites/usgin.org/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script src="../../sites/usgin.org/files/js/js_6NZETHuKw1ApdT5e99VHub1jaO7qPNGoyzEx-QwT0OM.js"></script>
+<script src="../../sites/usgin.org/files/js/js_fcINsYjtr984oyleyDsxng4lXGdG4-pstId1C34Xi_g.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33141825-1"]);_gaq.push(["_setDomainName", ".usgin.org"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script>jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: false,
+dropShadows: true});
+});</script>
+<script>
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+        </script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"corolla", "theme_token":"7IrgRflZ7g7LbcWWCiq8kNopzZHQUdOs9pof82W9cQ0", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.js":1, "sites\u002Fall\u002Fmodules\u002Fshadowbox\u002Fshadowbox_auto.js":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fjs\u002Fpanels.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.hoverIntent.minified.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.bgiframe.min.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsuperfish.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupersubs.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupposition.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsftouchscreen.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsfsmallscreen.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fjs\u002Fviews_slideshow.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1, "1":1, "2":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.css":1, "0":1, "modules\u002Faggregator\u002Faggregator.css":1, "modules\u002Fbook\u002Fbook.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_repeat_field\u002Fdate_repeat_field.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fckeditor\u002Fckeditor.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fcss\u002Fpanels.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-vertical.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-navbar.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fviews_slideshow.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fstyle\u002Fdefault.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.headings.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.image.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fhtml-elements.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fforms.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ftables.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fpage.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Farticles.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcomments.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffields.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fblocks.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fnavigation.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffonts.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcorolla.settings.style.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcolor\u002Fcolors.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fprint.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.layout.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.fonts.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.styles.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.lt-ie9.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fie-lte-9.css":1}}, "shadowbox":{"animate":true, "animateFade":true, "animSequence":"wh", "auto_enable_all_images":0, "auto_gallery":0, "autoplayMovies":true, "continuous":false, "counterLimit":10, "counterType":"default", "displayCounter":true, "displayNav":true, "enableKeys":true, "fadeDuration":0.35, "handleOversize":"resize", "handleUnsupported":"link", "initialHeight":160, "initialWidth":320, "language":"en", "modal":false, "overlayColor":"#000", "overlayOpacity":0.8, "resizeDuration":0.55, "showMovieControls":true, "slideshowDelay":0, "viewportPadding":20, "useSizzle":false}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip", "trackDomainMode":"1"}});</script>
+<!--[if lt IE 9]>
+<script src="http://usgin.org/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?mm58yj"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-70 node-type-book site-name-usgin section-content color-scheme-custom corolla bs-n bb-n mb-dd rc-6 rct-6">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<div id="page-wrapper">
+<div class="page snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n btc-n btw-b bta-l bts-n ntc-n ntw-b nta-l nts-n ctc-n ctw-b cta-l cts-n ptc-n ptw-b pta-l pts-n" id="page">
+<div id="menu-bar-wrapper">
+<div class="container clearfix">
+<div class="nav clearfix" id="menu-bar"><nav class="block block-superfish menu-wrapper menu-bar-wrapper clearfix odd first last block-count-1 block-region-menu-bar block-1" id="block-superfish-1">
+<h2 class="element-invisible block-title element-invisible">Main menu</h2>
+<ul class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-6 sf-parent-items-4 sf-single-items-2" id="superfish-1"><li class="first odd sf-item-1 sf-depth-1 sf-no-children" id="menu-198-1"><a class="sf-depth-1" href="../../index.html">Home</a></li><li class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" id="menu-1130-1"><a class="sf-depth-1 menuparent" href="../about/index.html">About</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1131-1"><a class="sf-depth-2" href="../usgin-overview/index.html">USGIN Overview</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1174-1"><a class="sf-depth-2" href="../usgin-objectives/index.html">USGIN Objectives</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1173-1"><a class="sf-depth-2" href="../open-data/index.html">Open Data</a></li><li class="last even sf-item-4 sf-depth-2 sf-no-children" id="menu-1132-1"><a class="sf-depth-2" href="../faq/index.html">Frequently Asked Questions (FAQ)</a></li></ul></li><li class="middle odd sf-item-3 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent" id="menu-1133-1"><a class="sf-depth-1 menuparent" href="../usage/index.html">Usage</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1172-1"><a class="sf-depth-2" href="../using-usgin/index.html">Using USGIN</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1134-1"><a class="sf-depth-2" href="../usgin-data-provider-workflow/index.html">USGIN Data Provider Workflow</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1135-1"><a class="sf-depth-2" href="../usgin-best-practices/index.html">USGIN Best Practices</a></li><li class="middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1175-1"><a class="sf-depth-2" href="../../specifications/index.html" title="">USGIN Community Specifications</a></li><li class="last odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1169-1"><a class="sf-depth-2" href="../usgin-software-applications/index.html">USGIN Software Applications</a></li></ul></li><li class="middle even sf-item-4 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent" id="menu-1143-1"><a class="sf-depth-1 menuparent" href="../explore/index.html">Explore</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1157-1">USGIN Catalog [Dead Link, http://catalog.usgin.org/search/]</li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1158-1">USGIN Lab [Dead Link, http://lab.usgin.org/]</li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1159-1">USGIN Repository [Dead Link, http://repository.usgin.org/]</li><li class="middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1506-1">USGIN Schemas [Dead Link, http://schemas.usgin.org/home/]</li><li class="middle odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1160-1">National Geothermal Data System [Dead Link, http://geothermaldata.org/]</li><li class="middle even sf-item-6 sf-depth-2 sf-no-children" id="menu-1161-1">AASG Geothermal Data [Dead Link, http://www.stategeothermaldata.org/]</li><li class="last odd sf-item-7 sf-depth-2 sf-no-children" id="menu-1171-1"><a class="sf-depth-2" href="https://github.com/usgin" title="">USGIN GitHub</a></li></ul></li><li class="middle odd sf-item-5 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" id="menu-1144-1"><a class="sf-depth-1 menuparent" href="../documents/index.html">Documents</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1321-1"><a class="sf-depth-2" href="../../documentation/index.html" title="">Specification Documentation</a></li><li class="last even sf-item-2 sf-depth-2 sf-no-children" id="menu-808-1"><a class="sf-depth-2" href="../../tutorial_view_page/index.html" title="">Tutorials</a></li></ul></li><li class="last even sf-item-6 sf-depth-1 sf-no-children" id="menu-1170-1"><a class="sf-depth-1" href="../../glossary/index.html">Glossary</a></li></ul>
+</nav></div> </div>
+</div>
+<div id="header-wrapper">
+<div class="container clearfix">
+<header class="clearfix with-logo" role="banner">
+<div class="branding-elements clearfix" id="branding">
+<div id="logo">
+<a href="../../index.html" title="Home page"><img alt="USGIN" class="site-logo image-style-none" src="../../sites/usgin.org/files/USGIN_logo-relief-scaled_0.png" typeof="foaf:Image"/></a> </div>
+<hgroup id="name-and-slogan">
+<h1 id="site-name"><a href="../../index.html" title="Home page">USGIN</a></h1>
+<h2 id="site-slogan">United States Geoscience Information Network</h2>
+</hgroup>
+</div>
+</header>
+</div>
+</div>
+<div id="content-wrapper">
+<div class="container">
+<div id="columns">
+<div class="columns-inner clearfix">
+<div id="content-column">
+<div class="content-inner">
+<section id="main-content" role="main">
+<div class="content-margin">
+<div class="content-style">
+<div class="clearfix" id="breadcrumb"><nav class="breadcrumb-wrapper clearfix" role="navigation"><h2 class="element-invisible">You are here</h2><ol class="clearfix" id="crumbs"><li class="crumb crumb-first"><a href="../xml-tutorial/index.html">XML Tutorial</a></li></ol></nav></div>
+<div id="content">
+<div class="block block-system no-title odd first last block-count-2 block-region-content block-main" id="block-system-main">
+<article about="/content/xml-namespaces-and-prefixes" class="node node-book article odd node-full ia-n clearfix" id="node-70" role="article" typeof="sioc:Item foaf:Document">
+<div class="node-inner">
+<header class="node-header">
+<h1 class="node-title" datatype="" property="dc:title" rel="nofollow">
+                          XML Namespaces and Prefixes                      </h1>
+</header>
+<div class="node-content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Within <a href="../../glossary/index.html">XML</a> documents, it sometimes becomes necessary to differentiate one <a href="../../glossary/index.html">element</a> from another based on the context in which these elements are used.</p>
+<p>For example, the <span style="font-family: monospace; font-size:large;">&lt;table&gt;</span> element is used differently between XML and <a href="../../glossary/index.html">HTML</a>. Within an XML document in which both XML and HTML <span style="font-family: monospace; font-size:large;">&lt;table&gt;</span> elements are present, <em>namespaces </em>and <em>prefixes </em>can be used to differentiate XML table elements from HTML table elements.</p>
+<p><em>Namespaces</em> <a href="../../glossary/index.html">identify</a> the context in which a given element is used, thereby differentiating that element from otherwise-identical elements.</p>
+<p>Theoretically, <em>any</em> label can be used as a namespace, but XML namespaces should be <a href="../../glossary/index.html">URIs</a>. Ideally, an XML namespace is an HTTP-capable URI that <a href="../../glossary/index.html">dereferences</a> to a web-accessible description of the context identified by the namespace. Consequently, most XML namespaces in common use look like standard web addresses.</p>
+<p>Going back to the above example, a namespace identifying HTML5 as the context for a given <span style="font-family: monospace; font-size:large;">&lt;table&gt;</span> element might appear as follows:</p>
+<p class="rteindent1">http://www.w3.org/TR/html5/</p>
+<p>When entered into a web browser, this namespace dereferences to a description of HTML5.</p>
+<h3>Namespace Declaration</h3>
+<p>Before a namespace can be used to differentiate a given element, the namespace must first be <em>declared</em>. This is accomplished by means of the <strong>XML namespace </strong><a href="../../glossary/index.html">attribute</a> (<span style="font-family: monospace; font-size:large;">xmlns</span>). Continuing the example above:</p>
+<dl style="font-family: monospace; font-size: large;">
+<dd>&lt;table xmlns="http://www.w3.org/TR/html5/" /&gt;</dd>
+</dl>
+<p>This declaration indicates that the <strong>table </strong>element is being used within the context of HTML5.</p>
+<p>Because it can be tedious to make declarations on a per-element basis throughout long documents, <em>prefixes</em> are often used instead.</p>
+<h3>XML Prefixes</h3>
+<p>A prefix is a short text string that <em>invokes</em> a namespace, acting as a proxy for the full namespace. <span style="color: green; font-weight:bold;">Prefixes</span> can be used to differentiate tags, attributes, or even element content, like so:</p>
+<p class="rteindent1" style="font-family:monospace; font-size:large;">&lt;<span style="color: green;">prefix:</span>tag <span style="color: green;">prefix:</span>attribute="value"&gt;<span style="color: green;">prefix:</span>content&lt;/<span style="color: green;">prefix:</span>tag&gt;</p>
+<p>In order to be invoked by a prefix, a declared namespace must be <em>bound</em> to a prefix. This binding can take place either in the element in which the namespace is invoked; or within an element that acts as a parent to the element in which the namespace is invoked.</p>
+<p>For example, assume that a <strong>table </strong>element has been nested within a <strong>body</strong> element (which acts as a <em>parent element </em>to the <strong>table</strong> element), like so:</p>
+<dl style="font-family:monospace; font-size:large;">
+<dd>&lt;body&gt;
+	<dl>
+<dd>&lt;table&gt;content&lt;/table&gt;</dd>
+</dl>
+</dd>
+<dd>&lt;/body&gt;</dd>
+</dl>
+<p>If we wish to use a prefix to indicate that the <strong>table </strong>element is being used in the context of the <span style="color:green;"><strong>html5</strong></span> prefix, the <span style="color:green;"><strong>html5</strong></span> prefix must first be declared and <em>bound</em> to the namespace using the <span style="color:#FF0000;"><strong>xmlns</strong></span> attribute, like so:</p>
+<dl style="font-family: monospace; font-size: large;">
+<dd>&lt;tag <span style="color:#FF0000;">xmlns</span>:<span style="color:green;">html5</span>="http://www.w3.org/TR/html5/" /&gt;</dd>
+</dl>
+<p>This must be done either in the <strong>table </strong>element or any element that acts as a <em>parent</em> to the <strong>table</strong> element, such as the <strong>body</strong> element. Because binding the <span style="color:green;"><strong>html5</strong></span> prefix to the <strong>table</strong> element <em>within</em> the <strong>table</strong> element would be redundant under most circumstances, it is more efficient to bind the <span style="color:green;"><strong>html5</strong></span> prefix to the declared namespace within a parent element, such as the <strong>body</strong> element, like so:</p>
+<dl style="font-family:monospace; font-size:large;">
+<dd>&lt;body <span style="color:#FF0000;">xmlns</span>:<span style="color:green;">html5</span>="http://www.w3.org/TR/html5/"&gt;
+
+	<dl>
+<dd>&lt;<span style="color:green;">html5</span>:table&gt;content&lt;/<span style="color:green;">html5</span>:table&gt;</dd>
+</dl>
+</dd>
+<dd>&lt;/body&gt;</dd>
+</dl>
+<p>Having been bound to a declared namespace within the <strong>body</strong> element, the prefix can thereafter be used on <em>any </em>element within the <strong>body </strong>element; this includes the <strong>table </strong>element.</p>
+<p>Typically, namespaces are declared and bound to prefixes within the <em>root element </em>of a given document, and invoked via prefix where necessary in nested elements.</p>
+<h3>Practical Example</h3>
+<p>To give a more concrete example of the usage of XML prefixes:</p>
+<p class="rteindent1" style="font-family:monospace; font-size:large;">&lt;<span style="color:green;">wfs</span>:WFS_Capabilities <span style="color:red;">xmlns</span>:<span style="color:green;">wfs</span>="<span style="color:blue;">http://www.opengis.net/wfs</span>" <span style="color:red;">xmlns</span>:<span style="color:green;">ows</span>="<span style="color:blue;">http://www.opengis.net/ows</span>"&gt;</p>
+<p>This is <strong>WFS_Capabilities</strong> element (<span style="font-family: monospace; font-size:large;">&lt;WFS_Capabilities&gt;</span>) is the root element  of the <a href="../../glossary/index.html">capabilities document</a> that describes a National Geothermal Data System [Dead Link, http://geothermaldata.org/] <a href="../../glossary/index.html">web feature service</a>. Here, two <span style="color:blue;">namespaces</span> are declared and bound to two different <span style="color:green;">prefixes</span> via the <span style="color:red;"><strong>xmlns</strong></span> attribute:</p>
+<ul>
+<li>The <span style="color:green;"><strong>wfs</strong></span> prefix is bound to the following namespace: <span style="color:blue;">http://www.opengis.net/wfs</span></li>
+<li>The <span style="color:green;"><strong>ows</strong></span> prefix is bound to the following namespace: <span style="color:blue;">http://www.opengis.net/ows</span></li>
+</ul>
+<p>Later on in the document, the following elements occur:</p>
+<p class="rteindent1" style="font-family:monospace; font-size:large;">&lt;<span style="color:green;">ows</span>:Abstract&gt;Well header information for oil and gas wells in Arizona.&lt;/<span style="color:green;">ows</span>:Abstract&gt;</p>
+<p class="rteindent1" style="font-family:monospace; font-size:large;">&lt;<span style="color:green;">wfs</span>:Name&gt;aasg:Wellheader&lt;/<span style="color:green;">wfs</span>:Name&gt;</p>
+<p>These prefixes indicate that the <strong>Abstract</strong> element is used in the context of an <a href="http://www.opengeospatial.org/" target="_blank">Open Geospatial Consortium</a> OWS Common Implemetation Specification XML <a href="../../glossary/index.html">schema</a>; likewise, the <strong>Name</strong> element is used in the context of an Open Geospatial Consortium web feature service. Information about the context of these elements can be found at the web location indicated by the namespaces to which the prefixes have been bound.</p>
+<p>To continue the tutorial, click the links below.</p>
+</div></div></div> <footer class="book-navigation" id="book-navigation-64">
+<div class="page-links clearfix">
+<a class="page-previous" href="../xml-attributes/index.html" title="Go to previous page">‹ XML Attributes</a>
+<a class="page-up" href="../xml-tutorial/index.html" title="Go to parent page">up</a>
+<a class="page-next" href="../xml-review/index.html" title="Go to next page">XML Review ›</a>
+</div>
+</footer>
+</div>
+</div>
+</article>
+</div> </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="container clearfix">
+<footer class="clearfix" role="contentinfo">
+<div class="region region-footer"><div class="region-inner clearfix"><div class="block block-block no-title odd first last block-count-3 block-region-footer block-14" id="block-block-14"><div class="block-inner clearfix">
+<div class="block-content content"><p><span style="font-size: 10px;">Funding for the USGIN initiative provided by the National Science Foundation <a href="http://nsf.gov">http://nsf.gov</a> under NSF award number EAR-0753154, as part of the <a href="http://www.nsf.gov/pubs/2007/nsf07565/nsf07565.pdf" target="_blank">INTEROP initiative</a>. The USGIN initiative is managed by the Arizona Geological Survey (AZGS) [Dead Link, http://azgs.az.gov] on behalf of the <a href="http://www.stategeologists.org/" target='_"blank"'>Association of American State Geologists (AASG)</a>. Some USGIN documents and products were developed for use by the National Geothermal Data System [Dead Link, http://www.geothermaldata.org] (NGDS), which is powered by USGIN; these materials are supported by the <a href="http://www.energy.gov" target="_blank">Department of Energy</a> under grants EE-0002850 and EE-0001120 awarded to the AASG and <a href="http://www.boisestate.edu/" target="_blank">Boise State University</a>, respectively.</span></p>
+</div>
+</div></div></div></div> </footer>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

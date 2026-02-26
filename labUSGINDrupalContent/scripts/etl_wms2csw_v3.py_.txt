@@ -1,0 +1,277 @@
+#!/usr/bin/env python
+# this is etl_wms2csw_v3.py
+
+"""
+ETL script that parses a WMS GetCapabilities requests and generate insert transaction XML files into deegree CSW 2.3pre
+
+Usage:  
+
+Python 2.6
+Wolfgang Grunberg
+Arizona Geological Survey
+08/18/2009
+"""
+
+# Library Imports
+import os
+import sys
+import httplib
+import urllib
+import urllib2
+import logging
+import cProfile
+from xml.dom import minidom
+from xml.dom import Node
+from time import strftime
+
+
+
+# module globals 
+
+__author__ = "Wolfgang Grunberg"
+__copyright__ = "Copyright 2009, Arizona Geological Survey"
+__credits__ = ["Wolfgang Grunberg", "the Internets"]
+__license__ = "GPL"
+__version__ = "1.0.0"
+__maintainer__ = "Wolfgang Grunberg"
+__email__ = "wgrunberg@azgs.az.gov"
+__status__ = "Development"                  # "Prototype", "Development", or "Production"
+
+# Module constants
+
+CSW_SERVICE_URL = "http://10.208.254.192:8080/deegree-csw/services"
+#CSW_SERVICE_URL = "http://75.101.143.247:8080/deegree-csw/services"
+WMS_GETCAPABILITIES_URL_LIST = "C:\\projects\\WMS2CSW_2009\\source\\wms_getcapabilities_url.txt"        # Tab delimited list of key (file identifier) and value (GetCapabilities URL) pairs
+WMS_GETCAPABILITIES_XML_PATH = "C:\\projects\\WMS2CSW_2009\\source\\GetCapability\\"
+CSW_INSERT_XML_PATH = "C:\\projects\\WMS2CSW_2009\\output\\"
+TRANSFORMATION_XSLT = 'C:/projects/WMS2CSW_2009/transformation/XSLT/wms2iso19119_insert_XSLT1_07.xsl'
+MSXML_EXE_PATH = 'C:/projects/WMS2CSW_2009/transformation/XSLT/MSXSL'   # Path to MSXSL.exe shell to Microsoft XML Parser
+
+
+# Functions
+
+
+def ISO_date_time():
+    """
+    Generate a ISO compatible Date/Time timestamp for now
+    2009-03-10T00:00:00
+    """
+    from time import strftime
+    now_iso = strftime("%Y-%m-%dT%H:%M:%S")
+    return now_iso
+
+def open_url_list():
+    """
+    Open space/tab delimited file with WMS GetCapability requests key (output file name) value (GetCapabilities URL) pairs.
+    """
+    url_arr = []
+    try:
+        infile = file(WMS_GETCAPABILITIES_URL_LIST, 'r')
+    except IOError, e:
+        print '  ERROR: can\'t find file or read data: ', e
+    else:
+        for line in infile:
+            try:
+                # dumb way to check if there are URL key value pairs ....
+                list = [line.split()]
+                test = '    ' + list[-1][0] + ' - ' + list[-1][1]
+                url_arr.append(line.split())
+            except:
+                print '  ERROR: Can\'t split or read name & value pair: ', line
+    finally:
+        infile.close()
+        True
+    # debug
+#    for item in url_arr:
+#        print item
+    return url_arr
+
+def get_wms_getcapabilities(key,url):
+    """
+    Send GetCapabilities request to WMS service and capture response
+    """
+    response_arr = []
+    print '    URL:', url
+    # Open GetCapabilities URL
+    req = urllib2.Request(url)
+    try:
+        response = urllib2.urlopen(url)
+    except urllib2.HTTPError, e:
+        print '  EROR: The server couldn\'t fulfill the request.'
+        print '    Error code: ', e.code
+    except urllib2.URLError, e:
+        print '  ERROR: We failed to reach a server.'
+        print '    Reason: ', e.reason
+    else:
+        print '    The server responded.'
+        xml_response = response.read()
+        # parse response
+        xmldoc = minidom.parseString(xml_response)
+        
+        # Check if it's a valid WMS GetCapabilities response
+        #if xmldoc.getElementsByTagName('WMT_MS_Capabilities') or xmldoc.getElementsByTagName('WMS_Capabilities'):
+        if xmldoc.getElementsByTagName('WMT_MS_Capabilities'):
+            for node in xmldoc.getElementsByTagName('WMT_MS_Capabilities'):       # visit every node <WMT_MS_Capabilities />
+                print "    WMS WMT_MS_Capabilities Version: "+str(node.attributes.items())
+            for node in xmldoc.getElementsByTagName('WMS_Capabilities'):       # visit every node <WMS_Capabilities />
+                print "    WMS_Capabilities Version: "+str(node.attributes.items())
+            count_records = 0
+            for node in xmldoc.getElementsByTagName('Layer'):       # visit every node <Layer />
+                count_records = count_records + 1
+                #print "    Loaded: "+node.firstChild.nodeValue
+            print "    WMS has "+str(count_records)+" layer(s)"
+            # Append XML response to list
+            response_arr=[key,url,xmldoc.toxml()]      # append array with WMS service key name, URL, and GetCapability response XML
+        else:
+            #print '  ERROR: not a valid WMT_MS_Capabilities or WMS_Capabilities response'
+            print '  ERROR: not a valid WMT_MS_Capabilities response.'
+            print '  WARNING: Only WMS Version 1.1.1 GetCapabilities responses are currently supported by this ETL script.'
+            print xmldoc.toxml()
+        xmldoc.unlink()     # cleanup DOM for improved performance
+    # debug
+#    print response_arr[0]
+    return response_arr
+
+def write_wms_getcapabilities(key,url,xml):
+    """
+    Write WMS GetCapabilities response to file
+    """
+    xml_in_arr = []
+    xml_file_name = "wms_getcapability_"+key+".xml"
+    if os.path.exists(WMS_GETCAPABILITIES_XML_PATH+xml_file_name) == False:
+        print "    Writing GetCqapability response to file: "+WMS_GETCAPABILITIES_XML_PATH+xml_file_name
+        try:
+            outfile = open(WMS_GETCAPABILITIES_XML_PATH+xml_file_name, 'w')
+        except IOError, e:
+            print '  ERROR: can\'t create a new file: ', e
+        else:
+            try:
+                outfile.write(xml.encode("utf-8"))      #force utf-8 encoding
+                xml_in_arr = [key,url,WMS_GETCAPABILITIES_XML_PATH+xml_file_name]
+            except IOError, e:
+                print '  ERROR: can\'t write to a new file: ', e
+        finally:
+            outfile.close()
+            True
+    else:
+        print "    GetCapabilities file already exists: "+WMS_GETCAPABILITIES_XML_PATH+xml_file_name
+        xml_in_arr = [key,url,WMS_GETCAPABILITIES_XML_PATH+xml_file_name]
+    return xml_in_arr
+
+def transform_wms_getcapabilities(key,url,xml_in):
+    """
+    Execute Microsft's XSLT1 transformation shell
+    """
+    print '    Start XSLT1 Transformation on: '+url
+    csw_insert_arr = []
+    xml_out = CSW_INSERT_XML_PATH+"csw_insert_"+key+".xml"
+    print "    Do XSLT transformation on "+xml_in+" file"
+    cmd = MSXML_EXE_PATH+' -o '
+    cmd += CSW_INSERT_XML_PATH.replace('//','/')+'csw_insert_'+key+'.xml '
+    cmd += xml_in+' '
+    cmd += TRANSFORMATION_XSLT+' '
+    cmd += 'TIMESTAMP='+ISO_date_time()+' '
+    print "    Transformation request: "+cmd
+    # NOTE that "os.system" allowes for multiple threads. Use "call" if you want python to wait
+    if os.path.exists(xml_out) == False:
+        try:
+            os.system(cmd)
+            csw_insert_arr = [key,url,xml_out]
+        except OSError, e:
+            print >>sys.stderr, "*** ERROR - transformation failed: ", e
+    else:
+        print "    File exists: "+xml_out
+        csw_insert_arr = [key,url,xml_out]
+    return csw_insert_arr
+
+def insert(xml_out_file=''):
+    """
+    Post CSW Insert Transaction XML to CSW server
+    """
+    try:
+        with open(xml_out_file, 'r') as f:
+            url = CSW_SERVICE_URL
+            xml_request = f.read()
+            #print data
+            req = urllib2.Request(url, xml_request)
+            response = urllib2.urlopen(req)
+            xml_response = response.read()
+        f.close()
+        True
+        
+        # parse response
+        xmldoc = minidom.parseString(xml_response)
+        #print xmldoc.toxml()
+        for node in xmldoc.getElementsByTagName('ows:Exception'):       # visit every node <ows:Exception />
+            print "  EXCEPTION: "+node.firstChild.nodeValue
+            print "  OFFENDING FILE: "+xml_out_file
+            #print xml_request
+        count_records = 0
+        for node in xmldoc.getElementsByTagName('dc:identifier'):       # visit every node <dc:identifier />
+            count_records = count_records + 1
+            #print "    Loaded: "+node.firstChild.nodeValue
+        print "    Inserted "+str(count_records)+" metadata record(s)"
+        xmldoc.unlink()     # cleanup DOM for improved performance
+    except:
+        print "  ERROR: Insert Failed"
+    return
+
+def etl():
+    """
+    Extract WMS GetCapabilities response, transform to CSW Insert request, and insert new CSW type "service" record into CSW service
+    """
+    print "***** START "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+    
+    response_arr = []       # Received WMS GetCapabilities List: key, url, xml response
+    xml_in_arr = []         # Writen WMS GetCapabilities file List: key, url
+    csw_insert_arr = []     # Path to CSW Insert transaction file List: key, url, path
+    
+    # get key value pairs from URL list
+    url_arr = open_url_list()
+    
+    if url_arr:
+        for item in url_arr:
+            print ' '
+            print '*** Working on '+item[0]
+            
+            # Retreave WMS GetCapabilities responses
+            try:
+                response_arr = get_wms_getcapabilities(item[0],item[1])
+#             print 'response_arr = '
+#             print response_arr
+            except:
+                print '  ABBORT: Key/Value pairs are messed up in: '+WMS_GETCAPABILITIES_URL_LIST+' '
+                print '          Key: out file name without spaces or suffix '
+                print '          Value: URL to WMS getCapabilities. Don\'t forget to specify version=1.1.1 - the only version the XSLTY supports at this time.'
+                return
+            
+            # Write WMS GetCapabilities responses to file
+            if response_arr:
+                xml_in_arr = write_wms_getcapabilities(response_arr[0],response_arr[1],response_arr[2])
+#                print '    xml_in_arr = '
+#                print xml_in_arr
+            else:
+                print '    Empty response_arr[] '
+            
+            # Do XSLT transformation
+            if xml_in_arr:
+                csw_insert_arr = transform_wms_getcapabilities(xml_in_arr[0],xml_in_arr[1],xml_in_arr[2])
+            else:
+                print '    Empty xml_in_arr[] '
+            
+            # Send CSW Insert transaction Request
+            if csw_insert_arr:
+                insert(csw_insert_arr[2])
+            else:
+                print '    Empty csw_insert_arr[] '
+            
+    else:
+        print '  ABORT: no key value pair in URL file: '+WMS_GETCAPABILITIES_URL_LIST
+        
+    print "***** STOP "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+    return
+
+if __name__=="__main__":
+    etl()
+    #cProfile.run('etl()')      # execution performance information
+

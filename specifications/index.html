@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html dir="ltr" lang="en" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<link href="../sites/usgin.org/files/USGIN_logo-relief-icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<title>USGIN Specifications | USGIN</title>
+<link href="../sites/usgin.org/files/css/css__9zsakYbWSOTLroLLtWO9P7zLJXhXtSJo2OgXN4wIrU.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_46QGmMqjVc_YTx9u4xYolLTy2B3BpaGpo8YSjZBT6-U.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_IDPWSOKlCJtw3_eUV2mzByrBbsqqkZiiK22EuNYeYts.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_WkIQlS2V8h4Vh16HARhGTGX8u2nA_FzvuTZ5-DXLwaQ.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_Y3PUqd--DradeOnS-wbsCfpx2jRIBIbKUoXmpD2hEFk.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_5_EBsvYf_U3gqgv1Idal1sImw7zcXB1kaIR6NOugp8o.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_x2rUjMjgzUJSI2QS_CYLUFJmXs0VH_atp9wTSqhL-pE.css" media="only screen" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_EVQoUsMQ9NbQIRKIelZaauOTXwp4T9vQDW73uShE0Go.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../sites/usgin.org/files/css/css_oQrDix5EBP5CTAkc0Z64pkJfGKOFCjTJ0Txot4eBax0.css" media="only screen" rel="stylesheet" type="text/css"/>
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_WlIJMnYeT0-vKQbaUsXRf4C9pNv9ClsMam3ay7FJ0PU.css" media="screen" />
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_wil2VZHAky4m54MyLVpgiMX_IQ_4jrIPsVv8FFt_U9I.css" media="screen" />
+<![endif]-->
+<script src="../sites/usgin.org/files/js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js"></script>
+<script src="../sites/usgin.org/files/js/js_HSXQknPKeNM2ykLt9WTJKY2whmAKG_qIHeBIoqRHVuQ.js"></script>
+<script src="../sites/usgin.org/files/js/js_7m6c1y3WfxWPy1QfSAyxuR_ORwve3DPS-nQaAIHr6ww.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33141825-1"]);_gaq.push(["_setDomainName", ".usgin.org"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script>jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: false,
+dropShadows: true});
+});</script>
+<script>
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+	      Shadowbox.init(Drupal.settings.shadowbox);
+	    </script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"corolla", "theme_token":"PLbC16fLRniK0Xp1P8m4Ph2DTihCzy1nqhgTlDI2arY", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.js":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fjs\u002Fpanels.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.hoverIntent.minified.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.bgiframe.min.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsuperfish.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupersubs.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupposition.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsftouchscreen.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fjs\u002Fviews_slideshow.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.js":1, "misc\u002Ftableheader.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1, "1":1, "2":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.css":1, "modules\u002Faggregator\u002Faggregator.css":1, "modules\u002Fbook\u002Fbook.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_repeat_field\u002Fdate_repeat_field.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fckeditor\u002Fckeditor.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fcss\u002Fpanels.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-vertical.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-navbar.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fviews_slideshow.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fstyle\u002Fdefault.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.headings.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.image.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fhtml-elements.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fforms.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ftables.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fpage.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Farticles.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcomments.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffields.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fblocks.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fnavigation.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffonts.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcorolla.settings.style.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcolor\u002Fcolors.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fprint.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.layout.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.fonts.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.styles.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.lt-ie9.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fie-lte-9.css":1}}, "shadowbox":{"animate":true, "animateFade":true, "animSequence":"wh", "auto_enable_all_images":0, "auto_gallery":0, "autoplayMovies":true, "continuous":false, "counterLimit":10, "counterType":"default", "displayCounter":true, "displayNav":true, "enableKeys":true, "fadeDuration":0.35, "handleOversize":"resize", "handleUnsupported":"link", "initialHeight":160, "initialWidth":320, "language":"en", "modal":false, "overlayColor":"#000", "overlayOpacity":0.8, "resizeDuration":0.55, "showMovieControls":true, "slideshowDelay":0, "viewportPadding":20, "useSizzle":false}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip", "trackOutboundAsPageview":1, "trackDomainMode":"1"}});</script>
+<!--[if lt IE 9]>
+<script src="http://usgin.org/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?mhyven"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-specifications site-name-usgin section-specifications page-views color-scheme-custom corolla bs-n bb-n mb-dd rc-6 rct-6">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<div id="page-wrapper">
+<div class="page snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n btc-n btw-b bta-l bts-n ntc-n ntw-b nta-l nts-n ctc-n ctw-b cta-l cts-n ptc-n ptw-b pta-l pts-n" id="page">
+<div id="menu-bar-wrapper">
+<div class="container clearfix">
+<div class="nav clearfix" id="menu-bar"><nav class="block block-superfish menu-wrapper menu-bar-wrapper clearfix odd first last block-count-1 block-region-menu-bar block-1" id="block-superfish-1">
+<h2 class="element-invisible block-title element-invisible">Main menu</h2>
+<ul class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-6 sf-parent-items-4 sf-single-items-2" id="superfish-1"><li class="first odd sf-item-1 sf-depth-1 sf-no-children" id="menu-198-1"><a class="sf-depth-1" href="../index.html">Home</a></li><li class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" id="menu-1130-1"><a class="sf-depth-1 menuparent" href="../content/about/index.html">About</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1131-1"><a class="sf-depth-2" href="../content/usgin-overview/index.html">USGIN Overview</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1174-1"><a class="sf-depth-2" href="../content/usgin-objectives/index.html">USGIN Objectives</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1173-1"><a class="sf-depth-2" href="../content/open-data/index.html">Open Data</a></li><li class="last even sf-item-4 sf-depth-2 sf-no-children" id="menu-1132-1"><a class="sf-depth-2" href="../content/faq/index.html">Frequently Asked Questions (FAQ)</a></li></ul></li><li class="active-trail middle odd sf-item-3 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent" id="menu-1133-1"><a class="sf-depth-1 menuparent" href="../content/usage/index.html">Usage</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1172-1"><a class="sf-depth-2" href="../content/using-usgin/index.html">Using USGIN</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1134-1"><a class="sf-depth-2" href="../content/usgin-data-provider-workflow/index.html">USGIN Data Provider Workflow</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1135-1"><a class="sf-depth-2" href="../content/usgin-best-practices/index.html">USGIN Best Practices</a></li><li class="active-trail middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1175-1"><a class="sf-depth-2 active" href="index.html" title="">USGIN Specifications</a></li><li class="last odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1169-1"><a class="sf-depth-2" href="../content/usgin-software-applications/index.html">USGIN Software Applications</a></li></ul></li><li class="middle even sf-item-4 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent" id="menu-1143-1"><a class="sf-depth-1 menuparent" href="../content/explore/index.html">Explore</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1157-1">USGIN Catalog [Dead Link, http://catalog.usgin.org/search/]</li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1158-1">USGIN Lab [Dead Link, http://lab.usgin.org/]</li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1159-1">USGIN Repository [Dead Link, http://repository.usgin.org/]</li><li class="middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1160-1">National Geothermal Data System [Dead Link, http://geothermaldata.org/]</li><li class="middle odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1161-1">AASG Geothermal Data [Dead Link, http://www.stategeothermaldata.org/]</li><li class="last even sf-item-6 sf-depth-2 sf-no-children" id="menu-1171-1"><a class="sf-depth-2" href="https://github.com/usgin" title="">USGIN GitHub</a></li></ul></li><li class="middle odd sf-item-5 sf-depth-1 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" id="menu-1144-1"><a class="sf-depth-1 menuparent" href="../content/documents/index.html">Documents</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-808-1"><a class="sf-depth-2" href="../tutorial_view_page/index.html" title="">Tutorials</a></li></ul></li><li class="last even sf-item-6 sf-depth-1 sf-no-children" id="menu-1170-1"><a class="sf-depth-1" href="../glossary/index.html">Glossary</a></li></ul>
+</nav></div> </div>
+</div>
+<div id="header-wrapper">
+<div class="container clearfix">
+<header class="clearfix with-logo" role="banner">
+<div class="branding-elements clearfix" id="branding">
+<div id="logo">
+<a href="../index.html" title="Home page"><img alt="USGIN" class="site-logo image-style-none" src="../sites/usgin.org/files/USGIN_logo-relief-scaled_0.png" typeof="foaf:Image"/></a> </div>
+<hgroup id="name-and-slogan">
+<h1 id="site-name"><a href="../index.html" title="Home page">USGIN</a></h1>
+<h2 id="site-slogan">United States Geoscience Information Network</h2>
+</hgroup>
+</div>
+</header>
+</div>
+</div>
+<div id="content-wrapper">
+<div class="container">
+<div id="columns">
+<div class="columns-inner clearfix">
+<div id="content-column">
+<div class="content-inner">
+<section id="main-content" role="main">
+<div class="content-margin">
+<div class="content-style">
+<div class="clearfix" id="breadcrumb"><nav class="breadcrumb-wrapper clearfix" role="navigation"><h2 class="element-invisible">You are here</h2><ol class="clearfix" id="crumbs"><li class="crumb crumb-first"><a href="../content/usage/index.html">Usage</a></li></ol></nav></div>
+<header class="clearfix">
+<h1 id="page-title">
+                            USGIN Specifications                          </h1>
+</header>
+<div id="content">
+<div class="block block-system no-title odd first last block-count-2 block-region-content block-main" id="block-system-main">
+<div class="view view-specification-view view-id-specification_view view-display-id-specifications_page view-dom-id-c4581143726d8f3145392e786eb9236c">
+<div class="view-header">
+<p>USGIN specifications are the standards, <a href="../glossary/index.html">profiles</a>, <a href="../glossary/index.html">protocols</a>, and hardware and software applications employed by USGIN to address the challenges associated with sharing large amounts of diverse data stored in geographically disparate locations. By using the specifications listed below, technical users can share their data in such a way that the data they publish is <a href="../glossary/index.html">interoperable</a>. For more information, see the <a href="../content/faq/index.html">USGIN specifications</a> entry on the <a href="../content/faq/index.html">USGIN FAQ</a> page.</p>
+<p>USGIN specifications include and the support the following:</p> </div>
+<div class="view-filters">
+<form accept-charset="UTF-8" action="/specifications" id="views-exposed-form-specification-view-specifications-page" method="get"><div><div class="views-exposed-form">
+<div class="views-exposed-widgets clearfix">
+<div class="views-exposed-widget views-widget-filter-field_specification_taxonomy_tid" id="edit-field-specification-taxonomy-tid-wrapper">
+<label for="edit-field-specification-taxonomy-tid">
+            Categories          </label>
+<div class="views-widget">
+<div class="form-item form-type-select form-item-field-specification-taxonomy-tid">
+<select class="form-select" id="edit-field-specification-taxonomy-tid" multiple="multiple" name="field_specification_taxonomy_tid[]" size="8"><option value="47">Metadata Profiles</option><option value="44">Web Service Standards</option><option value="43">Schema Standards</option><option value="48">URI Profiles</option><option value="42">Metadata Standards</option><option value="46">Web Service Profiles</option><option value="41">Data Standards</option><option value="49">Applications</option></select>
+</div>
+</div>
+</div>
+<div class="views-exposed-widget views-submit-button">
+<input class="form-submit" id="edit-submit-specification-view" name="" type="submit" value="Apply"/> </div>
+<div class="views-exposed-widget views-reset-button">
+<input class="form-submit" id="edit-reset" name="op" type="submit" value="Reset"/> </div>
+</div>
+</div>
+</div></form> </div>
+<div class="view-content">
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="applications/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Applications</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd views-row-first">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://aws.amazon.com/" id="amazon-web-services" target="_blank">Amazon Web Services</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Computing resources available for rent. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/amazon-web-services] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Several servers that host USGIN websites or provide USGIN services are provided by Amazon Web Services.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://tomcat.apache.org/" id="apache_tomcat" target="_blank">Apache Tomcat</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Free-and-open-source <a href="../glossary/index.html">web server software</a>. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/apache-tomcat] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Used to run various software applications, such as GeoServer and GeoPortal, which provide <a href="http://www.opengeospatial.org/" target="_blank">Open Geospatial Consortium (OGC)</a>-compliant <a href="../glossary/index.html">web services</a></p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.djangoproject.com/" id="django" target="_blank">Django</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Open-source web application framework written in the Python programming language. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/django] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Provides a number of USGIN sites and web services and custom applications, including the USGIN <a href="../glossary/index.html">URI</a> redirection engine</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://drupal.org/">Drupal</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Modular, extensible, actively maintained free-and-open-source web site content management framework; capable of running on any computing platform that supports PHP-capable <a href="../glossary/index.html">web server software</a> and database software. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/drupal] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Several websites related to the USGIN Initiative were built using the Drupal CMF, including:</p>
+<ul>
+<li>
+		The AASG Geothermal Data [Dead Link, http://www.stategeothermaldata.org/] website</li>
+<li>
+		The NDGS Portal [Dead Link, http://geothermaldata.org/]</li>
+<li>
+		The <a href="../index.html">USGIN</a> website</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://esri.com/" id="esri_implementation" target="_blank">ESRI ArcGIS Desktop, ArcGIS Explorer, ArcGIS Server, and Geoportal</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Proprietary geographic information system software and <a href="../glossary/index.html">web service</a>-compatible <a href="../glossary/index.html">server software</a></p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Though USGIN specifications support open-source <a href="../glossary/index.html">GIS</a> software applications, USGIN users can, and often do, deploy their data as <a href="../glossary/index.html">web services</a> using ESRI software.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://geoserver.org/" id="geoserver" target="_blank">GeoServer</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Free-and-open-source <a href="../glossary/index.html">web service</a>-compatible <a href="../glossary/index.html">server software</a>. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/geoserver] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Goeserver is a useful alternative for technical users with data to share who are disinclined to acquire a license for proprietary <a href="../glossary/index.html">web service</a>-compatible <a href="../glossary/index.html">web server software</a>.</p>
+<p>As an example: Southern Methodist University, a contributor to the  National Geothermal Data System [Dead Link, http://geothermaldata.org/], uses GeoServer to host web services; a Southern Methodist University GeoServer REST page is available <a href="http://geothermal.smu.edu/geoserver/web/" target="_blank">here</a>.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://postgis.refractions.net/" id="gi-cat" target="_blank">PostGIS</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Adds support for geographic objects to PostgreSQL. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/postgresql-and-postgis] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>PostGIS is used by any number of databases that power <a href="http://www.opengeospatial.org/" target="_blank">Open Geospatial Consortium (OGC)</a> <a href="../glossary/index.html">web services</a>.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.postgresql.org/" id="postgresql" target="_blank">PostgreSQL</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Free-and-open-source object-relational database system with over 15 years of active development. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/postgresql-and-postgis] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>PostgreSQL is used by any number of databases that power <a href="http://www.opengeospatial.org/" target="_blank">Open Geospatial Consortium (OGC)</a> <a href="../glossary/index.html">web services</a>.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.python.org/" id="python" target="_blank">Python</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A programming language. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/applications/python] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Within the context of USGIN, Python is typically used for Django sites and converting Excel spreadsheets into ISO metadata (the application responsible for which can be found at <a href="http://github.com/usgin/csvtometadata" target="_blank">http://github.com/usgin/csvtometadata</a>).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="web-service-standards/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Web Service Standards</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://webhelp.esri.com/arcgisserver/9.3.1/dotNet/index.htm#what_is_a_map_service.htm" id="esri-map-service" target="_blank">ESRI Map Service</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>The standards governing <a href="../content/glossary/index.html">web services</a> deployed using ESRI software. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/esri-map-service] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>ESRI services can be produced by simply "publishing" an ESRI ArcMap document (.mxd) to an active ArcGIS Server</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.opengeospatial.org/standards/cat" id="ogc-catalog-service-web" target="_blank">OGC Catalog Service for the Web (CSW 2.0.2)</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>The OpenGIS Catalogue Services Interface Standard (CAT) supports the ability to publish and search collections of descriptive information (<a href="../content/glossary/index.html">metadata</a>) about geospatial data, services, and related resources; CSW 2.0.2 is a <a href="../content/glossary/index.html">CSW</a> standard. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/ogc-catalog-service-web-csw-202] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Users typically deploy <a href="../content/glossary/index.html">catalog services</a> to list and manage queries regarding a large number of different web-accessible resources. Catalog services deployed by USGIN users in accordance with the OGC CSW 2.0.2 standard will demonstrate maximum compatibility with other OGC web services and a degree of compatibility with USGIN web services</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="metadata-standards/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Metadata Standards</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.fgdc.gov/metadata/geospatial-metadata-standards" id="fgdc-content-standard" target="_blank">FGDC Content Standard for Digital Geospatial Metadata</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Provides a common set of terms and definitions for the documentation of digital geospatial data. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/fgdc-content-standard-digital-geospatial-metadata-csdgm] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Usage not recommended for USGIN-compliant materials.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://iso.org/" id="iso-19115" target="_blank">ISO 19115</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Standard for geospatial <a href="../content/glossary/index.html">metadata</a>; developed by the International Standards Organization (ISO). For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/iso-19115] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Governs <a href="../glossary/index.html">metadata</a> <a href="../glossary/index.html">records</a> describing <a href="../glossary/index.html">web services</a>.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://iso.org/" id="iso-19119" target="_blank">ISO 19119</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Standard for <a href="../glossary/index.html">metadata</a> describing geospatial <a href="../content/glossary/index.html">web services</a>. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/iso-19119] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Governs <a href="../glossary/index.html">metadata</a> <a href="../glossary/index.html">records</a> describing <a href="../glossary/index.html">web services</a>.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://iso.org/" id="iso-19139" target="_blank">ISO 19139</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Implementation of ISO 19115 and ISO 19119 standards. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/iso-19139] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>All USGIN-compliant <a href="../glossary/index.html">metadata</a> conforms to this standard.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="schema-standards/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Schema Standards</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.opengeospatial.org/standards/gml" id="geography-markup-language-gml" target="_blank">Geography Markup Language (GML)</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>An <a href="../content/glossary/index.html">XML</a> grammar for expressing geographical <a href="../content/glossary/index.html">features</a>; developed by OpenGIS. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/geography-markup-language] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Used to describe the location of <a href="../glossary/index.html">features</a> in any <a href="http://www.opengeospatial.org/">Open Geospatial Consortium (OGC)</a> data <a href="../glossary/index.html">services</a>.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p>GeoSciML [Dead Link, http://www.cgi-iugs.org/tech_collaboration/geosciml.html]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>GeoSciML is a standards-based <a href="../content/glossary/index.html">XML</a> data format for application-neutral encoding of geoscience data and related spatial data. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/geosciml-xml-markup-language] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>GeoSciML functions as an <a href="../glossary/index.html">interchange format</a> for USGIN users. Though data encoded by USGIN users in accordance with GeoSciML is interoperable and can be exchanged between application, USGIN users are encouraged to encode their data using GeoSciML-portrayal where possible; GeoSciML-portrayal is a simplified, distilled version of GeoSciML. For more information, see the <a href="../sites/usgin.org/files/GeoSciML-PortrayalCookbook.pdf" target="_blank">GeoSciML-Portrayal Cookbook</a>.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>GeoSciML-Portrayal [Dead Link, https://www.seegrid.csiro.au/wiki/CGIModel/GeoSciMLPortrayalViewModel]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A simplified, distilled version of GeoSciML; includes schemas and vocabularies for simple <a href="../content/glossary/index.html">features</a>. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/gsmlp] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>GeoSciML-portrayal is ideal as an <a href="../glossary/index.html">interchange format</a> for USGIN users to encode their data, either for exchange between applications or for deployment as a <a href="../glossary/index.html">web service</a>. For more information, see the <a href="../sites/usgin.org/files/GeoSciML-PortrayalCookbook.pdf" target="_blank">GeoSciML-Portrayal Cookbook</a>.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://tools.ietf.org/html/rfc3986" id="ietf-uri" target="_blank">IETF URI</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A <a href="../content/glossary/index.html">Uniform Resource Identifier (URI)</a> is a compact sequence of characters that uniquely identifies an abstract or physical resource; URI standards were developed by the Internet Engineering Task Force (IETF). For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/ietf-rfc-3986-universal-resource-identifier] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>USGIN users usually employ <a href="../glossary/index.html">URIs</a> when <a href="../glossary/index.html">mapping</a> their data to a USGIN <a href="../content/glossary/index.html">schema</a>. In this context, generic IETF URIs are less optimal than USGIN URIs; USGIN URIs conform to a USGIN-specific <a href="../glossary/index.html">profile</a> of the IETF URI standard.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.w3.org/TR/REC-xml/">W3C Extensible Markup Language (XML)</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A versatile <a href="../content/glossary/index.html">markup language</a> developed by the World Wide Web Consortium. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/w3c-extensible-markup-language-xml] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>XML is the basis for the specialized <a href="../glossary/index.html">markup languages</a>, <a href="../glossary/index.html">interchange formats</a>, and <a href="../glossary/index.html">schemas</a> used by USGIN; these include GML, GeoSciML, and GeoSciML-portrayal. Any time these specialized markup languages are used, XML is used. For more information about XML, see the <a href="../content/xml-tutorial/index.html">USGIN XML Tutorial</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="web-service-profiles/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Web Service Profiles</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>GeoSciML WFS Architecture [Dead Link, http://lab.usgin.org/profiles/geosciml-wfs-architecture]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p><a href="../glossary/index.html">Profile</a> for <a href="../content/glossary/index.html">interoperable</a> <a href="http://www.opengeospatial.org/" target="_blank">Open Geospatial Consortium (OGC)</a> <a href="../content/glossary/index.html">web feature services</a> based on the GeoSciML <a href="../content/glossary/index.html">schema</a>; USGIN users who wish to structure their data using GeoSciML and deploy this data as an OGC web feature services (WFS) should accommodate this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/geosciml-wfs-architecture] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>GeoSciML-portrayal Simple Feature Schemas are <a href="../glossary/index.html">schemas</a> developed by USGIN used to structure data describing geophysical <a href="../glossary/index.html">features</a>. USGIN users will use the schemas indicated by this <a href="../glossary/index.html">profile</a> to structure their data for maximum <a href="../glossary/index.html">interoperability</a> with other USGIN <a href="../glossary/index.html">web services</a>. For more information, see the <a href="../sites/usgin.org/files/GeoSciML-PortrayalCookbook.pdf" target="_blank">GeoSciML-Portrayal Cookbook</a>.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.opengeospatial.org/standards/cat" id="ogc-csw-apiso" target="_blank">OGC CSW APISO - OGC ISO19115/ISO19119 application profile for CSW 2.0</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A <a href="../glossary/index.html">profile</a> of the <a href="http://www.opengeospatial.org/" target="_blank">OGC</a> <a href="../glossary/index.html">CSW</a> 2.0.2 standard. Users who wish to deploy an <a href="http://www.opengeospatial.org/" target="_blank">OGC</a>-compliant <a href="../glossary/index.html">catalog service</a> for their data should do so in accordance with this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/ogc-csw-apiso-ogc-iso19115iso19119-application-profile-csw-20] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Users typically deploy <a href="../glossary/index.html">catalog services</a> to list and manage queries regarding a large number of different web-accessible resources. Compliance with this <a href="../glossary/index.html">profile</a> of OGC specifications maximizes compatibility with other OGC services and ensures a degree of compatibility with USGIN services.</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>Profile for basic wells and borehole information service [Dead Link, http://lab.usgin.org/profiles/profile-basic-wells-and-borehole-information-service]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Content model and specifications for data describing boreholes; uses GeoSciML Borehole encodings. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/profile-basic-wells-and-borehole-information-service] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>AASG Geothermal Data [Dead Link, http://www.stategeothermaldata.org/] subrecipients who wish to share data describing wellbores or boreholes do so in accordance with the content model and specifications indicated by this profile</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p>USGIN CSW Profile [Dead Link, http://lab.usgin.org/profiles/usgin-csw-profile-home]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p><a href="../glossary/index.html">Profile</a> detailing a <a href="../content/glossary/index.html">web service</a> interface to search <a href="../content/glossary/index.html">metadata</a> catalogs; USGIN users who wish to deploy a USGIN-compliant <a href="../glossary/index.html">catalog service</a> for their data should accommodate this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/usgin-csw-profile-home] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>Users typically deploy <a href="../glossary/index.html">catalog services</a> to list and manage queries regarding a large number of different web-accessible resources. Compliance with this <a href="../glossary/index.html">profile</a> when deploying a catalog service ensures maximum compatibility with other USGIN services</p>
+</td>
+</tr>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>USGIN Vocabulary Service Profile [Dead Link, http://lab.usgin.org/profiles/usginvocabularyservice]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p><a href="../glossary/index.html">Profile</a> for USGIN-compliant <a href="../glossary/index.html">vocabulary service</a>. Users who wish to deploy a USGIN-compatible vocabulary service should accommodate this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/usginvocabularyservice] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>USGIN users deploying datasets containing specialized or personal vocabulary terms should define those terms in a web-accessible way, so other users accessing these datasets have the opportunity to look up vocabulary terms with which they are unfamiliar. This <a href="../glossary/index.html">profile</a> provides an optimal, USGIN-compatible method for deploying a <a href="../glossary/index.html">vocabulary service</a> that performs these functions.</p>
+</td>
+</tr>
+<tr class="even">
+<td class="views-field views-field-field-specification-label">
+<p>USGIN Web Map Service Profile [Dead Link, http://lab.usgin.org/profiles/usgin-wms-profile]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p><a href="../glossary/index.html">Profile</a> for <a href="../content/glossary/index.html">interoperable</a> <a href="../content/glossary/index.html">web map services</a>; USGIN users who wish to deploy their data as USGIN-compliant web map services should accommodate this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/usgin-wms-profile] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>As <a href="../glossary/index.html">web map services</a> are typically used to deploy <a href="../glossary/index.html">raster</a> datasets, this <a href="../glossary/index.html">profile</a> will be of use to any USGIN user wishing to share data that can be expressed as a raster image; using this profile will maximize WMS compatibility with other USGIN services</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="metadata-profiles/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Metadata Profiles</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>USGIN ISO Metadata Profile [Dead Link, http://lab.usgin.org/profiles/usgin-iso-metadata-profile]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>USGIN <a href="../glossary/index.html">profile</a> for the ISO19139 metadata standard. USGIN users with data to share who wish to describe their live data using <a href="../glossary/index.html">metadata</a> <a href="../glossary/index.html">records</a> in the USGIN Catalog [Dead Link, http://catalog.usgin.org/search/] or an equivalent <a href="../glossary/index.html">Catalog Service for the Web</a> should conform metadata records describing their data to this profile. For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/profiles/usgin-iso-metadata-profile] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>USGIN technical users will use <a href="../glossary/index.html">metadata</a> <a href="../glossary/index.html">records</a> to describe and register their data resources in the USGIN Catalog; these metadata records should conform to the USGIN <a href="../glossary/index.html">profile</a> of the ISO19139 metadata standard. For more information, see the <a href="../content/faq/index.html">USGIN Subdomains</a> entry in the <a href="../content/faq/index.html">USGIN FAQ</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="uri-profiles/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">URI Profiles</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p>USGIN Uniform Resource Identifier Profile [Dead Link, http://lab.usgin.org/profiles/usgin-uniform-resource-identifier-profile]</p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>Recommendations for usage and coining of <a href="../content/glossary/index.html">Uniform Resource Identifiers (URIs)</a>. Any USGIN user creating <a href="../glossary/index.html">URIs</a> should conform their URIs to this <a href="../glossary/index.html">profile</a>. For more information, see the corresponding entry  [Dead Link, http://lab.usgin.org/profiles/usgin-uniform-resource-identifier]on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+<p>USGIN users create URIs when <a href="../glossary/index.html">mapping</a> their data to a USGIN <a href="../glossary/index.html">schema</a>. USGIN URIs are used to identify certain resources and <a href="../glossary/index.html">dereference</a> to representations of these resources.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="views-table sticky-enabled cols-3">
+<caption>Category: <a href="data-standards/index.html" property="rdfs:label skos:prefLabel" typeof="skos:Concept">Data Standards</a></caption>
+<thead>
+<tr>
+<th class="views-field views-field-field-specification-label">
+<a class="active" href="index.html" title="sort by Specification">Specification</a> </th>
+<th class="views-field views-field-field-specification-description">
+<a class="active" href="index.html" title="sort by Description">Description</a> </th>
+<th class="views-field views-field-field-specification-example">
+            Uses          </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="views-field views-field-field-specification-label">
+<p><a href="http://www.w3.org/TR/2009/REC-skos-reference-20090818/">W3C Simple Knowledge Organization System (SKOS)</a></p>
+</td>
+<td class="views-field views-field-field-specification-description">
+<p>A standard way to represent knowledge organization systems using the Resource Description Framework (RDF). For more information, see the corresponding entry [Dead Link, http://lab.usgin.org/standards/w3c-skos] on the USGIN Laboratory [Dead Link, http://lab.usgin.org/] website.</p>
+</td>
+<td class="views-field views-field-field-specification-example">
+            (Coming Soon)          </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="container clearfix">
+<footer class="clearfix" role="contentinfo">
+<div class="region region-footer"><div class="region-inner clearfix"><div class="block block-block no-title odd first last block-count-3 block-region-footer block-14" id="block-block-14"><div class="block-inner clearfix">
+<div class="block-content content"><p><span style="font-size: 10px;">Funding for the USGIN initiative provided by the National Science Foundation <a href="http://nsf.gov">http://nsf.gov</a> under NSF award number EAR-0753154, as part of the <a href="http://www.nsf.gov/pubs/2007/nsf07565/nsf07565.pdf" target="_blank">INTEROP initiative</a>. The USGIN initiative is managed by the Arizona Geological Survey (AZGS) [Dead Link, http://azgs.az.gov] on behalf of the <a href="http://www.stategeologists.org/" target='_"blank"'>Association of American State Geologists (AASG)</a>. Some USGIN documents and products were developed for use by the National Geothermal Data System [Dead Link, http://www.geothermaldata.org] (NGDS), which is powered by USGIN; these materials are supported by the <a href="http://www.energy.gov" target="_blank">Department of Energy</a> under grants EE-0002850 and EE-0001120 awarded to the AASG and <a href="http://www.boisestate.edu/" target="_blank">Boise State University</a>, respectively.</span></p>
+</div>
+</div></div></div></div> </footer>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

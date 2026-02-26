@@ -1,0 +1,209 @@
+#!/usr/bin/env python
+# this is gn_iso19139_to_mef_example.py
+
+"""
+Example script to create GeoNetwork's Metadata Exchange Format 1.1 (MEF) archive from ISO 19139 metadata XML files
+
+MEF files are ZIP archives with the following structure:
++-<uuid>.mef        zip archive with the metadata's UUID (must be valid) as the file name
+ | -info.xml        GeoNetwork (GN) specific metadata such as privileges, related data & thumbnail image files, etc.
+ | -metadata.xml    ISO 19139 metadata record
+ | +public          directory with public thumbnail and data files - can be empty
+ | +private         directory with private (GN authentication required) data files such as shape files etc. - can be empty
+
+Usage: make sure to edit mef_siteId, info_xml, etc.
+
+Python 2.6
+Wolfgang Grunberg
+Arizona Geological Survey
+11/06/2009
+"""
+
+# Library Imports - not all may be needed
+import os
+import sys
+import cProfile
+import shutil
+import zipfile
+import mimetypes
+from xml.dom import minidom
+from xml.dom import Node
+from time import strftime
+
+# module globals and constants
+#  globals
+__author__ = "Wolfgang Grunberg"
+__copyright__ = "Copyright 2009, Arizona Geological Survey"
+__credits__ = ["Wolfgang Grunberg", "the Internets"]
+__license__ = "GPL"
+__version__ = "1.0.0"
+__maintainer__ = "Wolfgang Grunberg"
+__email__ = "wgrunberg@azgs.az.gov"
+__status__ = "Prototype"                  # "Prototype", "Development", or "Production"
+
+
+# some settings
+
+# ISO metadata folder path
+iso19139_xml_path = "C:\\tmp\\xml_test\\gn_iso19139\\"
+# MEF metadata folder path
+mef_path = "C:\\tmp\\xml_test\\gn_mef\\"
+
+# temporary work location
+tmp_path = "C:\\tmp\\"          # Temporary workspace to place MEF content before zipping up
+mef_dir_name = "temp_mef\\"     # Temporary directory that is created and deleted
+# temporary file/folder structure
+metadata_xml_file = tmp_path+mef_dir_name+"metadata.xml"
+info_xml_file = tmp_path+mef_dir_name+"info.xml"
+private_dir = tmp_path+mef_dir_name+"private"
+public_dir = tmp_path+mef_dir_name+"public"
+
+
+def createMef():
+    """
+    Extract ISO 19139 metadata and create MEF archive with necessary files and folders
+    """
+    
+    print "***** START Create MEF "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+    uuid = "missing"    # metadata record UUID dummy. NOTE: this must be a valid UUID!
+    create_date = strftime("%Y-%m-%d %H:%M:%S")     # dummy metadata creation date
+    mef_siteId = "00000000-0000-0000-0000-000000000000"     # metadata creator UUID. NOTE: this must be a valid UUID!
+    
+    # get list of file names from ISO directory
+    try:
+        dir = os.listdir(iso19139_xml_path)
+        #print dir    #debug
+    except os.error:
+        print "    EXCEPTION: ISO 19139 metadata directory does not exits ("+iso19139_xml_path+") "
+        return
+    
+    # go through each ISO 19139 metadata file
+    for file_name in dir:
+        #print file_name    #debug
+        iso_source_file = iso19139_xml_path+file_name   # path to metadata file
+        
+        # retrieve UUID from <gmd:fileIdentifier><gco:CharacterString>. NOTE: this must be a valid UUID!
+        with open(iso_source_file, 'r') as f:
+            iso_metadata = f.read()
+            print "    Reading metadata: "+file_name
+            #print iso_metadata    #debug
+            # Load ISO metadata string into XML object
+            xmldoc = minidom.parseString(iso_metadata)
+            #print xmldoc.toxml()    #debug
+            uuid = xmldoc.getElementsByTagName('gmd:fileIdentifier')[0].getElementsByTagName('gco:CharacterString')[0].firstChild.data
+            #print uuid    #debug
+            create_date = xmldoc.getElementsByTagName('gmd:dateStamp')[0].getElementsByTagName('gco:DateTime')[0].firstChild.data
+            #print create_date   #debug
+            xmldoc.unlink()     # cleanup DOM for improved performance
+        f.close()
+        True
+        
+        # if the MEF file doesn't exist, create it
+        if os.path.exists(mef_path+uuid+'.mef') == False:
+            # create temporary directory
+            try:
+                os.mkdir(tmp_path+mef_dir_name)
+            except OSError, err:
+                print >>sys.stderr, "    EXCEPTION: ", err
+                return
+            # create tmp/public/ and tmp/private/ directories
+            try:
+                os.mkdir(private_dir)
+            except OSError, err:
+                print >>sys.stderr, "    EXCEPTION: ", err
+                return
+            try:
+                os.mkdir(public_dir)
+            except OSError, err:
+                print >>sys.stderr, "    EXCEPTION: ", err
+                return
+            
+            # copy iso metadata to <temporary location>/metadata.xml
+            shutil.copy2(iso_source_file, metadata_xml_file)
+            
+            # construct info.xml file
+            info_xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+            info_xml += "<info version=\"1.0\"><general>"
+            info_xml +="<uuid>"+uuid+"</uuid>"          # universally unique identifier assigned to the metadata and must be a valid UUID. This element is optional and, when omitted, the reader should generate one
+            info_xml +="<createDate>"+create_date+"</createDate>"   # when the metadata was created
+            info_xml +="<changeDate>"+strftime("%Y-%m-%d %H:%M:%S")+"</changeDate>"     # most recent change to the metadata. 
+            info_xml +="<siteId>"+mef_siteId+"</siteId>"    # This is an UUID that identifies the actor that created the metadata and must be a valid UUID. When the UUID element is missing, this element should be missing too. If present, it will be ignored.
+            info_xml +="<siteName>Arizona Geological Survey</siteName>"     # Site Name
+            info_xml +="<schema>iso19139</schema>"      # dublin-core, fgdc-std, iso19115, iso19139
+            info_xml +="<format>full</format>"          # MEF format: simple, partial, full
+            info_xml +="<localId>"+uuid+"</localId>"    # OPTIONAL If present, indicates the id used locally by the sourceId actor to store the metadata. Its purpose is just to allow the reuse of the same local id when reimporting a metadata.
+            info_xml +="<isTemplate>false</isTemplate>" # A boolean field that indicates if this metadata is a template used to create new ones. There is no real distinction between a real metadata and a template but some actors use it to allow fast metadata creation.
+            info_xml +="<rating>0</rating>"             # If present, indicates the users' rating of the metadata ranging from 1 (a bad rating) to 5 (an excellent rating). The special value 0 means that the metadata has not been rated yet. Can be used to sort search results.
+            info_xml +="<popularity>0</popularity>"     # If present, indicates the popularity of the metadata. The value must be positive and high values mean high popularity. The criteria used to set the popularity is left to the writer. Its main purpose is to provide a metadata ordering during a search.
+            info_xml +="</general><categories> <category name=\"geology\"/><category name=\"datasets\"/></categories>"  # GN categories
+            info_xml +="<privileges>"                   # GN privileges
+            info_xml +="<group name=\"all\">\
+            <operation name=\"view\" />\
+            <operation name=\"download\"/>\
+            <operation name=\"dynamic\"/>\
+            <operation name=\"featured\"/>\
+            </group>\
+            <group name=\"intranet\">\
+            <operation name=\"view\" />\
+            <operation name=\"download\"/>\
+            <operation name=\"dynamic\"/>\
+            <operation name=\"featured\"/>\
+            </group>\
+            <group name=\"admin\">\
+            <operation name=\"view\" />\
+            <operation name=\"download\"/>\
+            <operation name=\"dynamic\"/>\
+            <operation name=\"featured\"/>\
+            <operation name=\"notify\"/>\
+            </group>\
+            </privileges>"
+            info_xml +="<public/>"              # GN public files
+            info_xml +="<private/></info>"      # GN private files - require authentication 
+            #print info_xml      # debug
+            
+            # create tmp/info.xml file
+            try: 
+                f = open(info_xml_file,'w')
+                f.write(info_xml)
+                f.close()
+                True
+            except:
+                print "    EXCEPTION: failed to write "+info_xml_file
+            
+            # mef file name
+            zfilename = uuid+".mef"
+            # create list files and folders to archive
+            archive_list = ['metadata.xml', 'info.xml', 'public', 'private']
+           # go to temporary directory
+            os.chdir(tmp_path+mef_dir_name)
+            #print os.getcwd()   # debug
+            # zip and copy mef if it does not already exist
+            if os.path.exists(mef_path+zfilename) == False:
+                zout = zipfile.ZipFile(mef_path+zfilename, "w")
+                # add files and folders to mef files
+                for fname in archive_list:
+                    zout.write(fname)
+                zout.close()
+                print "    creating "+mef_path+zfilename
+            else:
+                #print "   XML file exists"
+                print "    "+mef_path+zfilename+" already exists - skipping it"
+                pass
+            
+            # go up a level of temporary directory
+            os.chdir(tmp_path)
+            # delete tmp stuff
+            try:
+                shutil.rmtree(tmp_path+mef_dir_name)
+                print "    deleted "+tmp_path+mef_dir_name+" directory"
+            except OSError:
+                print "    EXCEPTION: failed to delete "+tmp_path+mef_dir_name
+                return
+        else:
+            print "    "+uuid+".mef already exists - skipping it"
+    print "***** END Create MEF "+strftime("%Y-%m-%d %H:%M:%S")+" *****"
+
+if __name__=="__main__":
+    createMef()
+    #cProfile.run('createMef()')      # execution performance information
+

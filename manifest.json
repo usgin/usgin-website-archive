@@ -1,0 +1,1071 @@
+{
+  "harvest_date": "2026-02-26T17:50:27Z",
+  "domain": "usgin.org",
+  "target_timestamp": "20250612",
+  "wayback_snapshot": "https://web.archive.org/web/20250612/http://usgin.org/",
+  "statistics": {
+    "cdx_entries": 479,
+    "after_dedup_filter": 250,
+    "downloaded_cdx": 250,
+    "skipped_resume": 0,
+    "assets_discovered": 158,
+    "assets_downloaded": 1,
+    "html_rewritten": 59,
+    "css_rewritten": 8,
+    "total_bytes": 40499463,
+    "failed_count": 157,
+    "files_by_extension": {
+      ".html": 61,
+      ".css": 74,
+      ".gif": 7,
+      ".htm": 1,
+      ".js": 33,
+      ".png": 64,
+      ".txt": 1,
+      ".xml": 1,
+      ".jpg": 4,
+      ".pdf": 3,
+      ".ico": 2
+    }
+  },
+  "files": [
+    "GenericMetadataModelDoc/css/ea.css",
+    "GenericMetadataModelDoc/images/ea.gif",
+    "GenericMetadataModelDoc/images/hbg.gif",
+    "GenericMetadataModelDoc/index.htm",
+    "GenericMetadataModelDoc/js/displayToc.js",
+    "contact/NGDS-Atlas/index.html",
+    "contact/index.html",
+    "content/about-usgin/index.html",
+    "content/about/index.html",
+    "content/accessing-usgin/index.html",
+    "content/data-provider-workflow/index.html",
+    "content/database_field/index.html",
+    "content/distributed-networks/index.html",
+    "content/documents/index.html",
+    "content/entering-data-content-models/index.html",
+    "content/explore/index.html",
+    "content/faq/index.html",
+    "content/finding-content-models/index.html",
+    "content/geodatabase-arcmap-part-1/index.html",
+    "content/geodatabase-arcmap-part-2/index.html",
+    "content/getting-started-content-models/index.html",
+    "content/getting-started-usgin-web-services/index.html",
+    "content/glossary/index.html",
+    "content/going-live/index.html",
+    "content/importing-your-data-geodatabase-part-1/index.html",
+    "content/importing-your-data-geodatabase-part-2/index.html",
+    "content/navigation-panel/index.html",
+    "content/ngds-content-model-tutorial/index.html",
+    "content/ngds-data-explorer/index.html",
+    "content/ngds-naming-conventions/index.html",
+    "content/open-data/index.html",
+    "content/schemas-content-models-templates-and-interoperability/index.html",
+    "content/sgd-content-model-tutorial/index.html",
+    "content/sgd-csw-client-arcmap/index.html",
+    "content/state-geothermal-data-usgin-use-case/index.html",
+    "content/submitting-data/index.html",
+    "content/usage/index.html",
+    "content/usgin-best-practices/index.html",
+    "content/usgin-csw-client/index.html",
+    "content/usgin-data-provider-workflow/index.html",
+    "content/usgin-distributed-network/index.html",
+    "content/usgin-metadata-tutorial/index.html",
+    "content/usgin-metadata-wizard-tutorial/index.html",
+    "content/usgin-objectives/index.html",
+    "content/usgin-open-data-compliance-guide/index.html",
+    "content/usgin-overview/index.html",
+    "content/usgin-software-applications/index.html",
+    "content/usgin-specifications/index.html",
+    "content/usgin-structure/index.html",
+    "content/usgin-uri-tutorial/index.html",
+    "content/usgin-user-workflow/index.html",
+    "content/usgin-web-services-tutorial/index.html",
+    "content/usgin-wfs-client/index.html",
+    "content/using-usgin/index.html",
+    "content/who-uses-usgin/index.html",
+    "content/working-your-content-model/index.html",
+    "content/xml-attributes/index.html",
+    "content/xml-namespaces-and-prefixes/index.html",
+    "content/xml-review/index.html",
+    "content/xml-tutorial/index.html",
+    "documentation/index.html",
+    "glossary/arcgis/index.html",
+    "glossary/attribute-gis/index.html",
+    "glossary/attribute-markup-language/index.html",
+    "glossary/binding/index.html",
+    "glossary/capabilities-document/index.html",
+    "glossary/content-model/index.html",
+    "glossary/data/index.html",
+    "glossary/database-field/index.html",
+    "glossary/database-key/index.html",
+    "glossary/database-record/index.html",
+    "glossary/database-view/index.html",
+    "glossary/database/index.html",
+    "glossary/dereference/index.html",
+    "glossary/element/index.html",
+    "glossary/feature-class/index.html",
+    "glossary/feature/index.html",
+    "glossary/geographic-information-systems-gis/index.html",
+    "glossary/html/index.html",
+    "glossary/http/index.html",
+    "glossary/identifier/index.html",
+    "glossary/index.html",
+    "glossary/interchange-format/index.html",
+    "glossary/interoperability/index.html",
+    "glossary/map-data/index.html",
+    "glossary/markup-language/index.html",
+    "glossary/metadata/index.html",
+    "glossary/open-source/index.html",
+    "glossary/profile/index.html",
+    "glossary/protocol/index.html",
+    "glossary/raster/index.html",
+    "glossary/resource/index.html",
+    "glossary/schema/index.html",
+    "glossary/string/index.html",
+    "glossary/subrecipient/index.html",
+    "glossary/syntax/index.html",
+    "glossary/token/index.html",
+    "glossary/uniform-resource-identifier-uri/index.html",
+    "glossary/vector/index.html",
+    "glossary/web-server-software/index.html",
+    "glossary/web-service/index.html",
+    "glossary/xml/index.html",
+    "images/M_images/emailButton.png",
+    "images/M_images/pdf_button.png",
+    "images/M_images/printButton.png",
+    "images/banner_temp.jpg",
+    "images/ginlab.jpg",
+    "index.html",
+    "index.php/q_option_com_content_view_article_id_48_Itemid_28.html",
+    "media/system/js/caption.js",
+    "media/system/js/mootools.js",
+    "misc/draggable.png",
+    "misc/drupal.js",
+    "misc/grippie.png",
+    "misc/help.png",
+    "misc/jquery.once.js",
+    "misc/menu-collapsed.png",
+    "misc/menu-expanded.png",
+    "misc/menu-leaf.png",
+    "misc/message-24-error.png",
+    "misc/message-24-ok.png",
+    "misc/message-24-warning.png",
+    "misc/progress.gif",
+    "misc/throbber-active.gif",
+    "misc/throbber-inactive.png",
+    "misc/throbber.gif",
+    "misc/tree-bottom.png",
+    "misc/tree.png",
+    "modules/comment/comment.css",
+    "modules/field/theme/field.css",
+    "modules/node/node.css",
+    "modules/search/search.css",
+    "modules/system/system.base.css",
+    "modules/system/system.menus.css",
+    "modules/system/system.messages.css",
+    "modules/system/system.theme.css",
+    "modules/user/user.css",
+    "node/1/index.html",
+    "node/11/index.html",
+    "node/12/index.html",
+    "node/14/index.html",
+    "node/17/index.html",
+    "node/179/index.html",
+    "node/180/index.html",
+    "node/181/index.html",
+    "node/182/index.html",
+    "node/2/index.html",
+    "node/20/index.html",
+    "node/26/index.html",
+    "node/3/index.html",
+    "node/41/index.html",
+    "node/42/index.html",
+    "node/45/index.html",
+    "node/46/index.html",
+    "node/47/index.html",
+    "node/49/index.html",
+    "node/52/index.html",
+    "node/56/index.html",
+    "node/57/index.html",
+    "node/65/index.html",
+    "node/7/index.html",
+    "node/70/index.html",
+    "node/8/index.html",
+    "node/87/index.html",
+    "node/9/done/index.html",
+    "node/9/index.html",
+    "node/90/index.html",
+    "node/91/index.html",
+    "node/92/index.html",
+    "node/93/index.html",
+    "node/94/index.html",
+    "node/95/index.html",
+    "node/96/index.html",
+    "opportunities/index.html",
+    "opportunities/software-development-specialist/index.html",
+    "page/about/index.html",
+    "page/beyond-open-data/index.html",
+    "page/host-your-own-data/index.html",
+    "page/how-usgin-works/index.html",
+    "page/join-our-newsletter/index.html",
+    "page/ngds-atlas/index.html",
+    "page/open-data-solutions/index.html",
+    "page/usgin-action-ngds/index.html",
+    "robots.txt",
+    "rss.xml",
+    "sites/about.usgin.org/files/Consulting.pdf",
+    "sites/about.usgin.org/files/Contracting.pdf",
+    "sites/about.usgin.org/files/NGDS-Atlas-small.pdf",
+    "sites/about.usgin.org/files/adaptivetheme/corolla_files/corolla.custom.css",
+    "sites/about.usgin.org/files/adaptivetheme/corolla_files/corolla.fonts.css",
+    "sites/about.usgin.org/files/adaptivetheme/corolla_files/corolla.lt-ie8.layout.css",
+    "sites/about.usgin.org/files/adaptivetheme/corolla_files/corolla.responsive.layout.css",
+    "sites/about.usgin.org/files/banner/Ownership-homepage-banner-v1.png",
+    "sites/about.usgin.org/files/banner/home-unsplash_52cb185a63c25_1.jpg",
+    "sites/about.usgin.org/files/banner/home_74907741_c2d59deb64_o.jpg",
+    "sites/about.usgin.org/files/banner/how-usgin-works.png",
+    "sites/about.usgin.org/files/banner/ngds-atlas-banner_web.png",
+    "sites/about.usgin.org/files/color/corolla-60340d2b/colors.css",
+    "sites/about.usgin.org/files/favicon1.ico",
+    "sites/about.usgin.org/files/images/056_edited_web.jpg",
+    "sites/about.usgin.org/files/images/NGDS-500px.png",
+    "sites/about.usgin.org/files/images/NGDS-Atlas-cover-web.png",
+    "sites/about.usgin.org/files/images/NGDS-Atlas-small_Page_06.png",
+    "sites/about.usgin.org/files/images/NGDS-Atlas-small_Page_11.png",
+    "sites/about.usgin.org/files/images/NGDS-Atlas-small_Page_13.png",
+    "sites/about.usgin.org/files/images/NGDS-Atlas-small_Page_61.png",
+    "sites/about.usgin.org/files/images/NGDS.png",
+    "sites/about.usgin.org/files/images/Search_interface_best_web.png",
+    "sites/about.usgin.org/files/images/discover-banner-web.png",
+    "sites/about.usgin.org/files/images/ngds-data-explorer.png",
+    "sites/about.usgin.org/files/images/open-data-solutions.png",
+    "sites/about.usgin.org/files/images/usgin-guide-20140822-cover-small-for-web.png",
+    "sites/about.usgin.org/files/images/usgin-infomercial.flv/index.html",
+    "sites/about.usgin.org/files/images/usgin-infomercial.jpg",
+    "sites/about.usgin.org/files/images/usgin-input-output-web.png",
+    "sites/about.usgin.org/files/images/usgin_data_access-web.png",
+    "sites/about.usgin.org/files/interoperability-weers-300dpi.png",
+    "sites/about.usgin.org/files/js/js_-z-2lAhufzBeVjYseT6cTzSICUy9vnoLBpu1sF_zZrs.js",
+    "sites/about.usgin.org/files/js/js_83zgtainmduQnRa2jfOFtruyeffZh_Max2KVjUAFsxM.js",
+    "sites/about.usgin.org/files/js/js_BAhqE0nsQns6shJD8cBPNaX58HANh3tzWfxSlYIKGGs.js",
+    "sites/about.usgin.org/files/js/js_D_LFNbKHhPtb9QULV_tD6WR2s1yrcYh1sdSa1VUV_jw.js",
+    "sites/about.usgin.org/files/js/js_EpBh4RQBeyaN1bsTVvLnFZCSGxlfhrfXxZPhZIO5Xuo.js",
+    "sites/about.usgin.org/files/js/js_GTQGw--oOKe8VGj7BIFt8NUNdCwRwUNb02uU_G06Rus.js",
+    "sites/about.usgin.org/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js",
+    "sites/about.usgin.org/files/js/js_JLxuxbhhrFRy-sBnijHkR0TGGHgiukMPv94zvDWgQ3g.js",
+    "sites/about.usgin.org/files/js/js_bOjt6zaGKW3Ql601Hup9iK7fIzn0qjAbJuy9e8DrGus.js",
+    "sites/about.usgin.org/files/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js",
+    "sites/about.usgin.org/files/js/js_hxpcmgBwgdiSp3y8s9rj6WX9pE8wDV49Fi-TFz4_wNg.js",
+    "sites/about.usgin.org/files/js/js_i_RxlX73XzAxgVFj-yiYlpI5TOq825Xr-mXLCGcASls.js",
+    "sites/about.usgin.org/files/js/js_mMuSdRh5NeaBYvACFdfxYZFykbM62b1Ir0OkbP8m74A.js",
+    "sites/about.usgin.org/files/js/js_rv_BKYv7yieH0IgHddhWHDC-bWGan8yiJbusyOpr0mw.js",
+    "sites/about.usgin.org/files/js/js_zoIR6wxkKoF46wcDgqzuONs_b9HoqrZKgR3ptlHozWg.js",
+    "sites/about.usgin.org/files/l-logo-usgin-75.png",
+    "sites/all/libraries/nivo-slider/jquery.nivo.slider.pack.js",
+    "sites/all/libraries/nivo-slider/nivo-slider.css",
+    "sites/all/libraries/nivo-slider/themes/bar/bar.css",
+    "sites/all/libraries/nivo-slider/themes/bar/bullets.png",
+    "sites/all/libraries/nivo-slider/themes/bar/loading.gif",
+    "sites/all/libraries/shadowbox/close.png",
+    "sites/all/libraries/shadowbox/loading.gif",
+    "sites/all/libraries/shadowbox/next.png",
+    "sites/all/libraries/shadowbox/pause.png",
+    "sites/all/libraries/shadowbox/play.png",
+    "sites/all/libraries/shadowbox/previous.png",
+    "sites/all/libraries/shadowbox/shadowbox.css",
+    "sites/all/libraries/shadowbox/shadowbox.js",
+    "sites/all/libraries/superfish/images/arrows-ffffff-rtl.png",
+    "sites/all/libraries/superfish/images/arrows-ffffff.png",
+    "sites/all/libraries/superfish/images/shadow.png",
+    "sites/all/modules/calendar/css/calendar_multiday.css",
+    "sites/all/modules/ckeditor/css/ckeditor.css",
+    "sites/all/modules/ckeditor/images/delete.png",
+    "sites/all/modules/ckeditor/images/tick.png",
+    "sites/all/modules/ctools/css/ctools.css",
+    "sites/all/modules/ctools/images/status-active.gif",
+    "sites/all/modules/date/date_api/date.css",
+    "sites/all/modules/date/date_popup/themes/datepicker.1.7.css",
+    "sites/all/modules/date/date_repeat_field/date_repeat_field.css",
+    "sites/all/modules/ds/layouts/ds_2col_stacked/ds_2col_stacked.css",
+    "sites/all/modules/ds/layouts/ds_2col_stacked_fluid/ds_2col_stacked_fluid.css",
+    "sites/all/modules/google_analytics/googleanalytics.js",
+    "sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js",
+    "sites/all/modules/mollom/mollom.css",
+    "sites/all/modules/nivo_slider/js/nivo_slider.js",
+    "sites/all/modules/panels/css/panels.css",
+    "sites/all/modules/shadowbox/shadowbox_auto.js",
+    "sites/all/modules/simplenews/simplenews.css",
+    "sites/all/modules/views/css/views.css",
+    "sites/all/modules/webform/css/webform.css",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/css/at.layout.css",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/css/at.settings.style.floatblocks.css",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/css/at.settings.style.headings.css",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/css/at.settings.style.image.css",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/scripts/html5.js",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/scripts/respond.js",
+    "sites/all/themes/adaptivetheme/adaptivetheme/at_core/scripts/scalefix.js",
+    "sites/all/themes/adaptivetheme/at_core/css/at.layout.css",
+    "sites/all/themes/adaptivetheme/at_core/css/at.settings.style.floatblocks.css",
+    "sites/all/themes/adaptivetheme/at_core/css/at.settings.style.headings.css",
+    "sites/all/themes/adaptivetheme/at_core/css/at.settings.style.image.css",
+    "sites/all/themes/adaptivetheme/at_core/scripts/html5.js",
+    "sites/all/themes/adaptivetheme/at_core/scripts/respond.js",
+    "sites/all/themes/adaptivetheme/at_core/scripts/scalefix.js",
+    "sites/all/themes/corolla/color/colors.css",
+    "sites/all/themes/corolla/css/articles.css",
+    "sites/all/themes/corolla/css/blocks.css",
+    "sites/all/themes/corolla/css/comments.css",
+    "sites/all/themes/corolla/css/corolla.settings.style.css",
+    "sites/all/themes/corolla/css/fields.css",
+    "sites/all/themes/corolla/css/forms.css",
+    "sites/all/themes/corolla/css/html-elements.css",
+    "sites/all/themes/corolla/css/ie-lte-9.css",
+    "sites/all/themes/corolla/css/images/action-link.png",
+    "sites/all/themes/corolla/css/images/arrow-down-white.png",
+    "sites/all/themes/corolla/css/images/arrow-right-white.png",
+    "sites/all/themes/corolla/css/images/button.png",
+    "sites/all/themes/corolla/css/images/forum-closed.png",
+    "sites/all/themes/corolla/css/images/forum-default.png",
+    "sites/all/themes/corolla/css/images/forum-hot-new.png",
+    "sites/all/themes/corolla/css/images/forum-hot.png",
+    "sites/all/themes/corolla/css/images/forum-new.png",
+    "sites/all/themes/corolla/css/images/forum-sticky.png",
+    "sites/all/themes/corolla/css/images/grippie.png",
+    "sites/all/themes/corolla/css/images/ts/arrow-circle.png",
+    "sites/all/themes/corolla/css/images/ts/arrow-double.png",
+    "sites/all/themes/corolla/css/images/ts/arrow-fat.png",
+    "sites/all/themes/corolla/css/images/ts/arrow-head.png",
+    "sites/all/themes/corolla/css/images/ts/arrow-skinny.png",
+    "sites/all/themes/corolla/css/images/ts/dots.png",
+    "sites/all/themes/corolla/css/images/ts/grid.png",
+    "sites/all/themes/corolla/css/images/ts/hatch.png",
+    "sites/all/themes/corolla/css/images/ts/line-horiz.png",
+    "sites/all/themes/corolla/css/images/ts/line-vert.png",
+    "sites/all/themes/corolla/css/navigation.css",
+    "sites/all/themes/corolla/css/page.css",
+    "sites/all/themes/corolla/css/print.css",
+    "sites/all/themes/corolla/css/responsive.desktop.css",
+    "sites/all/themes/corolla/css/responsive.smartphone.landscape.css",
+    "sites/all/themes/corolla/css/responsive.smartphone.portrait.css",
+    "sites/all/themes/corolla/css/responsive.tablet.landscape.css",
+    "sites/all/themes/corolla/css/responsive.tablet.portrait.css",
+    "sites/all/themes/corolla/css/tables.css",
+    "sites/usgin.org/files/Data_Delivery_Cycle.pdf",
+    "sites/usgin.org/files/GeoSciML-PortrayalCookbook.pdf",
+    "sites/usgin.org/files/Open_Data.png",
+    "sites/usgin.org/files/USGIN-diagram-resources-small.png",
+    "sites/usgin.org/files/USGIN-diagram-small.png",
+    "sites/usgin.org/files/USGIN_logo-relief-icon.ico",
+    "sites/usgin.org/files/USGIN_logo-relief-scaled_0.png",
+    "sites/usgin.org/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css",
+    "sites/usgin.org/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css",
+    "sites/usgin.org/files/css/css_46QGmMqjVc_YTx9u4xYolLTy2B3BpaGpo8YSjZBT6-U.css",
+    "sites/usgin.org/files/css/css_5_EBsvYf_U3gqgv1Idal1sImw7zcXB1kaIR6NOugp8o.css",
+    "sites/usgin.org/files/css/css_91qG6FROoMymZOYwz3SJN42Q92mgM6iOb6GKOxSTh18.css",
+    "sites/usgin.org/files/css/css_C5qScmQIv34EyxHOR8kn3k27hINZSu6NT9JpBRdauLg.css",
+    "sites/usgin.org/files/css/css_CKoWqiBj9gVXhPuDSnNphuEB0b0J2To76x0pX0EGqn4.css",
+    "sites/usgin.org/files/css/css_CiRTRM4rYg4KWTxlZgiIVey0Cp0b9CVnwj_Po312Vnw.css",
+    "sites/usgin.org/files/css/css_E95tmU3JQpgi3lzS2gJ8kKsRAG4WALhFDopKuAmv3ko.css",
+    "sites/usgin.org/files/css/css_EVQoUsMQ9NbQIRKIelZaauOTXwp4T9vQDW73uShE0Go.css",
+    "sites/usgin.org/files/css/css_IDPWSOKlCJtw3_eUV2mzByrBbsqqkZiiK22EuNYeYts.css",
+    "sites/usgin.org/files/css/css_WkIQlS2V8h4Vh16HARhGTGX8u2nA_FzvuTZ5-DXLwaQ.css",
+    "sites/usgin.org/files/css/css_WlIJMnYeT0-vKQbaUsXRf4C9pNv9ClsMam3ay7FJ0PU.css",
+    "sites/usgin.org/files/css/css_Y3PUqd--DradeOnS-wbsCfpx2jRIBIbKUoXmpD2hEFk.css",
+    "sites/usgin.org/files/css/css__9zsakYbWSOTLroLLtWO9P7zLJXhXtSJo2OgXN4wIrU.css",
+    "sites/usgin.org/files/css/css_asHhWxnSIZcSKFRQv9c4W21VWToFZZoGGsiop4Erlm4.css",
+    "sites/usgin.org/files/css/css_eeveVqU41w1S1ELhaV4bhbS7MFJbXVcDN6Mj47YM7xY.css",
+    "sites/usgin.org/files/css/css_jb1z_M3y6Jc93D_WLe9XwqabcrJi0w9ZKfXArEp-xME.css",
+    "sites/usgin.org/files/css/css_oQrDix5EBP5CTAkc0Z64pkJfGKOFCjTJ0Txot4eBax0.css",
+    "sites/usgin.org/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css",
+    "sites/usgin.org/files/css/css_wil2VZHAky4m54MyLVpgiMX_IQ_4jrIPsVv8FFt_U9I.css",
+    "sites/usgin.org/files/css/css_wxFupTUOv3nZCi7B8w1R2p21V3TDo9tqvZ3x0DMr_pE.css",
+    "sites/usgin.org/files/css/css_x2rUjMjgzUJSI2QS_CYLUFJmXs0VH_atp9wTSqhL-pE.css",
+    "sites/usgin.org/files/js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js",
+    "sites/usgin.org/files/js/js_6NZETHuKw1ApdT5e99VHub1jaO7qPNGoyzEx-QwT0OM.js",
+    "sites/usgin.org/files/js/js_7m6c1y3WfxWPy1QfSAyxuR_ORwve3DPS-nQaAIHr6ww.js",
+    "sites/usgin.org/files/js/js_HSXQknPKeNM2ykLt9WTJKY2whmAKG_qIHeBIoqRHVuQ.js",
+    "sites/usgin.org/files/js/js_K_iB9yRcjaeQEI1Ezp2I-dyBMdEvzx0lH_Zz54jtZgE.js",
+    "sites/usgin.org/files/js/js__hwcRkmGNOCwNr8aam0NOSmB7sWVWk0Xkg_lM8J0APM.js",
+    "sites/usgin.org/files/js/js_fcINsYjtr984oyleyDsxng4lXGdG4-pstId1C34Xi_g.js",
+    "sites/usgin.org/files/js/js_o8jeAKu4mzvjagFkFrKLQQ9nZhfkwMCbwbAnQNUaxTI.js",
+    "sites/usgin.org/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js",
+    "sites/usgin.org/files/ngds-content_models.pdf",
+    "sites/usgin.org/files/ngds_data_explorer.pdf",
+    "sites/usgin.org/files/ngds_naming_conventions.pdf",
+    "sites/usgin.org/files/sgd-repository_tutorial.pdf",
+    "sites/usgin.org/files/usgin-csw_client.pdf",
+    "sites/usgin.org/files/usgin-metada-relationship.png",
+    "sites/usgin.org/files/usgin-uri_tutorial.pdf",
+    "sites/usgin.org/files/ws-access-external_data0.PNG",
+    "sites/usgin.org/files/ws-access-external_data1.PNG",
+    "sites/usgin.org/files/ws-access-external_data2.PNG",
+    "sites/usgin.org/files/ws-access-external_data3.PNG",
+    "sites/usgin.org/files/ws-access-external_data4.PNG",
+    "sites/usgin.org/files/ws-access-external_data5.PNG",
+    "sites/usgin.org/files/ws-access1.PNG",
+    "sites/usgin.org/files/ws-arc-add_data.PNG",
+    "sites/usgin.org/files/ws-arc-browse.png",
+    "sites/usgin.org/files/ws-arc-browse_coordinates.PNG",
+    "sites/usgin.org/files/ws-arc-coordinates.PNG",
+    "sites/usgin.org/files/ws-arc-data.png",
+    "sites/usgin.org/files/ws-arc-map_properties.PNG",
+    "sites/usgin.org/files/ws-arc-map_window.PNG",
+    "sites/usgin.org/files/ws-arc-properties.png",
+    "sites/usgin.org/files/ws-arc-properties_window.PNG",
+    "sites/usgin.org/files/ws-arc-srp.PNG",
+    "sites/usgin.org/files/ws-arc-srp2.PNG",
+    "sites/usgin.org/files/ws-arc-xydata.PNG",
+    "sites/usgin.org/files/ws-arc-xydata3.PNG",
+    "sites/usgin.org/files/ws-workflow.png",
+    "sites/usgin.org/files/xml_tutorial.pdf",
+    "specifications/applications/index.html",
+    "specifications/data-standards/index.html",
+    "specifications/index.html",
+    "specifications/information-exchange/index.html",
+    "specifications/metadata-and-catalog/index.html",
+    "specifications/metadata-profiles/index.html",
+    "specifications/metadata-standards/index.html",
+    "specifications/schema-standards/index.html",
+    "specifications/system/index.html",
+    "specifications/uri-profiles/index.html",
+    "specifications/web-service-profiles/index.html",
+    "specifications/web-service-standards/index.html",
+    "templates/theme263/css/constant.css",
+    "templates/theme263/css/template.css",
+    "templates/theme263/favicon.ico",
+    "tutorial_view_page/index.html",
+    "tutorials/index.html",
+    "user/index.html"
+  ],
+  "failures": [
+    {
+      "url": "http://usgin.org/GenericMetadataModelDoc/images/hbg.gif",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/database_field",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/distributed-networks",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/entering-data-content-models",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/finding-content-models",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/getting-started-content-models",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/getting-started-usgin-web-services",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/going-live",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/importing-your-data-geodatabase-part-1",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/ngds-data-explorer",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/ngds-naming-conventions",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/schemas-content-models-templates-and-interoperability",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/sgd-content-model-tutorial",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/sgd-csw-client-arcmap",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/state-geothermal-data-usgin-use-case",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/submitting-data",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-csw-client",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-distributed-network",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-metadata-tutorial",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-metadata-wizard-tutorial",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-structure",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-uri-tutorial",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-user-workflow",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/usgin-wfs-client",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/working-your-content-model",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/xml-attributes",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/content/xml-tutorial",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/arcgis",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/attribute-gis",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/attribute-markup-language",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/binding",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/capabilities-document",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/content-model",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/data",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/database",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/database-field",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/database-key",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/database-record",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/database-view",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/dereference",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/element",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/feature",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/feature-class",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/geographic-information-systems-gis",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/html",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/http",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/identifier",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/interchange-format",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/interoperability",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/map-data",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/markup-language",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/metadata",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/open-source",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/profile",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/protocol",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/raster",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/resource",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/schema",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/string",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/subrecipient",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/syntax",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/token",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/uniform-resource-identifier-uri",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/vector",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/web-server-software",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/web-service",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/glossary/xml",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/images/M_images/emailButton.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/images/M_images/pdf_button.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/images/M_images/printButton.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/images/banner_temp.jpg",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/images/ginlab.jpg",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/media/system/js/caption.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/media/system/js/mootools.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/179",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/180",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/181",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/182",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/20",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/26",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/41",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/42",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/46",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/49",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/52",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/56",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/57",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/65",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/70",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/87",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/90",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/91",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/92",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/93",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/94",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/95",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/node/96",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/about.usgin.org/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/about.usgin.org/files/js/js_hxpcmgBwgdiSp3y8s9rj6WX9pE8wDV49Fi-TFz4_wNg.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/about.usgin.org/files/js/js_mMuSdRh5NeaBYvACFdfxYZFykbM62b1Ir0OkbP8m74A.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/Data_Delivery_Cycle.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/GeoSciML-PortrayalCookbook.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/Open_Data.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/USGIN-diagram-resources-small.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/USGIN-diagram-small.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_C5qScmQIv34EyxHOR8kn3k27hINZSu6NT9JpBRdauLg.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_CKoWqiBj9gVXhPuDSnNphuEB0b0J2To76x0pX0EGqn4.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_CiRTRM4rYg4KWTxlZgiIVey0Cp0b9CVnwj_Po312Vnw.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_E95tmU3JQpgi3lzS2gJ8kKsRAG4WALhFDopKuAmv3ko.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/css/css_IDPWSOKlCJtw3_eUV2mzByrBbsqqkZiiK22EuNYeYts.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/js/js_7m6c1y3WfxWPy1QfSAyxuR_ORwve3DPS-nQaAIHr6ww.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/js/js__hwcRkmGNOCwNr8aam0NOSmB7sWVWk0Xkg_lM8J0APM.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/js/js_o8jeAKu4mzvjagFkFrKLQQ9nZhfkwMCbwbAnQNUaxTI.js",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ngds-content_models.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ngds_data_explorer.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ngds_naming_conventions.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/sgd-repository_tutorial.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/usgin-csw_client.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/usgin-metada-relationship.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/usgin-uri_tutorial.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data0.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data1.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data2.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data3.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data4.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access-external_data5.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-access1.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-add_data.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-browse.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-browse_coordinates.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-coordinates.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-data.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-map_properties.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-map_window.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-properties.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-properties_window.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-srp.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-srp2.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-xydata.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-arc-xydata3.PNG",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/ws-workflow.png",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/sites/usgin.org/files/xml_tutorial.pdf",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/applications",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/data-standards",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/information-exchange",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/metadata-and-catalog",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/metadata-profiles",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/metadata-standards",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/schema-standards",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/system",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/uri-profiles",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/web-service-profiles",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/specifications/web-service-standards",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/templates/theme263/css/constant.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/templates/theme263/css/template.css",
+      "phase": "asset_round_1"
+    },
+    {
+      "url": "http://usgin.org/templates/theme263/favicon.ico",
+      "phase": "asset_round_1"
+    }
+  ]
+}

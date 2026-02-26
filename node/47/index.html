@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html dir="ltr" lang="en" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta about="/content/geodatabase-arcmap-part-2" content="0" datatype="xsd:integer" property="sioc:num_replies"/>
+<link href="../../sites/usgin.org/files/USGIN_logo-relief-icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<link href="../../content/usgin-web-services-tutorial/index.html" rel="up"/>
+<meta about="/content/geodatabase-arcmap-part-2" content="From Geodatabase to ArcMap, Part 2" property="dc:title"/>
+<meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+<link href="../../content/geodatabase-arcmap-part-2/index.html" rel="canonical"/>
+<link href="index.html" rel="shortlink"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width" name="MobileOptimized"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<title>From Geodatabase to ArcMap, Part 2 | USGIN</title>
+<link href="../../sites/usgin.org/files/css/css__9zsakYbWSOTLroLLtWO9P7zLJXhXtSJo2OgXN4wIrU.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_46QGmMqjVc_YTx9u4xYolLTy2B3BpaGpo8YSjZBT6-U.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_IDPWSOKlCJtw3_eUV2mzByrBbsqqkZiiK22EuNYeYts.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_WkIQlS2V8h4Vh16HARhGTGX8u2nA_FzvuTZ5-DXLwaQ.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_Y3PUqd--DradeOnS-wbsCfpx2jRIBIbKUoXmpD2hEFk.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_5_EBsvYf_U3gqgv1Idal1sImw7zcXB1kaIR6NOugp8o.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_x2rUjMjgzUJSI2QS_CYLUFJmXs0VH_atp9wTSqhL-pE.css" media="only screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_EVQoUsMQ9NbQIRKIelZaauOTXwp4T9vQDW73uShE0Go.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_oQrDix5EBP5CTAkc0Z64pkJfGKOFCjTJ0Txot4eBax0.css" media="only screen" rel="stylesheet" type="text/css"/>
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_WlIJMnYeT0-vKQbaUsXRf4C9pNv9ClsMam3ay7FJ0PU.css" media="screen" />
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/sites/usgin.org/files/css/css_wil2VZHAky4m54MyLVpgiMX_IQ_4jrIPsVv8FFt_U9I.css" media="screen" />
+<![endif]-->
+<script src="../../sites/usgin.org/files/js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js"></script>
+<script src="../../sites/usgin.org/files/js/js_HSXQknPKeNM2ykLt9WTJKY2whmAKG_qIHeBIoqRHVuQ.js"></script>
+<script src="../../sites/usgin.org/files/js/js_K_iB9yRcjaeQEI1Ezp2I-dyBMdEvzx0lH_Zz54jtZgE.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33141825-1"]);_gaq.push(["_setDomainName", ".usgin.org"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script>jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: false,
+dropShadows: true});
+});</script>
+<script>
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+	      Shadowbox.init(Drupal.settings.shadowbox);
+	    </script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"corolla", "theme_token":"CBXYNlovfcKsDA66k75q3Dm_-HZnIdgdbyXLjm96nD4", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.js":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fjs\u002Fpanels.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.hoverIntent.minified.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fjquery.bgiframe.min.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsuperfish.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupersubs.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsupposition.js":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fsftouchscreen.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fjs\u002Fviews_slideshow.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1, "1":1, "2":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "sites\u002Fall\u002Flibraries\u002Fshadowbox\u002Fshadowbox.css":1, "modules\u002Faggregator\u002Faggregator.css":1, "modules\u002Fbook\u002Fbook.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_repeat_field\u002Fdate_repeat_field.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fmollom\u002Fmollom.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fckeditor\u002Fckeditor.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fcss\u002Fpanels.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-vertical.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fcss\u002Fsuperfish-navbar.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fviews_slideshow.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.css":1, "sites\u002Fall\u002Flibraries\u002Fsuperfish\u002Fstyle\u002Fdefault.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.headings.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.settings.style.image.css":1, "sites\u002Fall\u002Fthemes\u002Fadaptivetheme\u002Fat_core\u002Fcss\u002Fat.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fhtml-elements.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fforms.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ftables.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fpage.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Farticles.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcomments.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffields.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fblocks.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fnavigation.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Ffonts.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fcorolla.settings.style.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcolor\u002Fcolors.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fprint.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.layout.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.fonts.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.responsive.styles.css":1, "public:\u002F\u002Fadaptivetheme\u002Fcorolla_files\u002Fcorolla.lt-ie9.layout.css":1, "sites\u002Fall\u002Fthemes\u002Fcorolla\u002Fcss\u002Fie-lte-9.css":1}}, "shadowbox":{"animate":true, "animateFade":true, "animSequence":"wh", "auto_enable_all_images":0, "auto_gallery":0, "autoplayMovies":true, "continuous":false, "counterLimit":10, "counterType":"default", "displayCounter":true, "displayNav":true, "enableKeys":true, "fadeDuration":0.35, "handleOversize":"resize", "handleUnsupported":"link", "initialHeight":160, "initialWidth":320, "language":"en", "modal":false, "overlayColor":"#000", "overlayOpacity":0.8, "resizeDuration":0.55, "showMovieControls":true, "slideshowDelay":0, "viewportPadding":20, "useSizzle":false}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip", "trackOutboundAsPageview":1, "trackDomainMode":"1"}});</script>
+<!--[if lt IE 9]>
+<script src="http://usgin.org/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?mhyven"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-47 node-type-book site-name-usgin section-content color-scheme-custom corolla bs-n bb-n mb-dd rc-6 rct-6">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<div id="page-wrapper">
+<div class="page snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n btc-n btw-b bta-l bts-n ntc-n ntw-b nta-l nts-n ctc-n ctw-b cta-l cts-n ptc-n ptw-b pta-l pts-n" id="page">
+<div id="menu-bar-wrapper">
+<div class="container clearfix">
+<div class="nav clearfix" id="menu-bar"><nav class="block block-superfish menu-wrapper menu-bar-wrapper clearfix odd first last block-count-1 block-region-menu-bar block-1" id="block-superfish-1">
+<h2 class="element-invisible block-title element-invisible">Main menu</h2>
+<ul class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-6 sf-parent-items-4 sf-single-items-2" id="superfish-1"><li class="first odd sf-item-1 sf-depth-1 sf-no-children" id="menu-198-1"><a class="sf-depth-1" href="../../index.html">Home</a></li><li class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" id="menu-1130-1"><a class="sf-depth-1 menuparent" href="../../content/about/index.html">About</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1131-1"><a class="sf-depth-2" href="../../content/usgin-overview/index.html">USGIN Overview</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1174-1"><a class="sf-depth-2" href="../../content/usgin-objectives/index.html">USGIN Objectives</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1173-1"><a class="sf-depth-2" href="../../content/open-data/index.html">Open Data</a></li><li class="last even sf-item-4 sf-depth-2 sf-no-children" id="menu-1132-1"><a class="sf-depth-2" href="../../content/faq/index.html">Frequently Asked Questions (FAQ)</a></li></ul></li><li class="middle odd sf-item-3 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent" id="menu-1133-1"><a class="sf-depth-1 menuparent" href="../../content/usage/index.html">Usage</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1172-1"><a class="sf-depth-2" href="../../content/using-usgin/index.html">Using USGIN</a></li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1134-1"><a class="sf-depth-2" href="../../content/usgin-data-provider-workflow/index.html">USGIN Data Provider Workflow</a></li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1135-1"><a class="sf-depth-2" href="../../content/usgin-best-practices/index.html">USGIN Best Practices</a></li><li class="middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1175-1"><a class="sf-depth-2" href="../../specifications/index.html" title="">USGIN Specifications</a></li><li class="last odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1169-1"><a class="sf-depth-2" href="../../content/usgin-software-applications/index.html">USGIN Software Applications</a></li></ul></li><li class="middle even sf-item-4 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent" id="menu-1143-1"><a class="sf-depth-1 menuparent" href="../../content/explore/index.html">Explore</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-1157-1">USGIN Catalog [Dead Link, http://catalog.usgin.org/search/]</li><li class="middle even sf-item-2 sf-depth-2 sf-no-children" id="menu-1158-1">USGIN Lab [Dead Link, http://lab.usgin.org/]</li><li class="middle odd sf-item-3 sf-depth-2 sf-no-children" id="menu-1159-1">USGIN Repository [Dead Link, http://repository.usgin.org/]</li><li class="middle even sf-item-4 sf-depth-2 sf-no-children" id="menu-1160-1">National Geothermal Data System [Dead Link, http://geothermaldata.org/]</li><li class="middle odd sf-item-5 sf-depth-2 sf-no-children" id="menu-1161-1">AASG Geothermal Data [Dead Link, http://www.stategeothermaldata.org/]</li><li class="last even sf-item-6 sf-depth-2 sf-no-children" id="menu-1171-1"><a class="sf-depth-2" href="https://github.com/usgin" title="">USGIN GitHub</a></li></ul></li><li class="middle odd sf-item-5 sf-depth-1 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" id="menu-1144-1"><a class="sf-depth-1 menuparent" href="../../content/documents/index.html">Documents</a><ul><li class="first odd sf-item-1 sf-depth-2 sf-no-children" id="menu-808-1"><a class="sf-depth-2" href="../../tutorial_view_page/index.html" title="">Tutorials</a></li></ul></li><li class="last even sf-item-6 sf-depth-1 sf-no-children" id="menu-1170-1"><a class="sf-depth-1" href="../../glossary/index.html">Glossary</a></li></ul>
+</nav></div> </div>
+</div>
+<div id="header-wrapper">
+<div class="container clearfix">
+<header class="clearfix with-logo" role="banner">
+<div class="branding-elements clearfix" id="branding">
+<div id="logo">
+<a href="../../index.html" title="Home page"><img alt="USGIN" class="site-logo image-style-none" src="../../sites/usgin.org/files/USGIN_logo-relief-scaled_0.png" typeof="foaf:Image"/></a> </div>
+<hgroup id="name-and-slogan">
+<h1 id="site-name"><a href="../../index.html" title="Home page">USGIN</a></h1>
+<h2 id="site-slogan">United States Geoscience Information Network</h2>
+</hgroup>
+</div>
+</header>
+</div>
+</div>
+<div id="content-wrapper">
+<div class="container">
+<div id="columns">
+<div class="columns-inner clearfix">
+<div id="content-column">
+<div class="content-inner">
+<section id="main-content" role="main">
+<div class="content-margin">
+<div class="content-style">
+<div id="content">
+<div class="block block-system no-title odd first last block-count-2 block-region-content block-main" id="block-system-main">
+<article about="/content/geodatabase-arcmap-part-2" class="node node-book article odd node-full ia-n clearfix" id="node-47" role="article" typeof="sioc:Item foaf:Document">
+<div class="node-inner">
+<header class="node-header">
+<h1 class="node-title" datatype="" property="dc:title" rel="nofollow">
+                          From Geodatabase to ArcMap, Part 2                      </h1>
+</header>
+<div class="node-content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Your data will appear in the Layers panel on the left side of the screen. In order to display the data points within this data, you must first tell ArcMap what <a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/003r00000001000000.htm" target="_blank">projection</a> to use for your <a href="../../glossary/index.html">data</a>, and which <a href="../../glossary/index.html">fields</a> within your dataset contain the latitude and longitude coordinates.</p>
+<ol>
+<li>
+		Right-click on your data. In the menu that apears (Figure 13), click <span style="font-weight: bold;">Display XY Data</span>
+<p style="text-align: center;"><img alt="Displaying XY Data" src="../../sites/usgin.org/files/ws-arc-data.png" style="float: inherit; width: 100%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 13:Displaying XY Data</p>
+</li>
+<li>
+		In the <span style="font-weight: bold;">Display XY Data</span> window that appears (Figure 14), make sure that your <strong>X</strong> and <strong>Y</strong> fields correspond with the <a href="../../glossary/index.html">database fields</a> in your database that contain the latitude and longitude information for your data. <span style="font-weight: bold;">Warning</span>: errors sometimes occur, so it’s possible you may have the right data in the wrong field. If your data does not display correctly, don’t be afraid to experiment with the <span style="font-weight: bold;">X Field</span> and <span style="font-weight: bold;">Y Field</span> options in order to find the right combination.
+		<p style="text-align: center;"><img alt="XY Data" src="../../sites/usgin.org/files/ws-arc-xydata.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 14: XY Data</p>
+</li>
+<li>
+		After you have specified your <strong>X Field</strong> and your <strong>Y Field</strong>, click <span style="font-weight: bold;">Edit</span> to specify the coordinate system [Dead Link, http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html/content/glossary#//003r00000001000000.htm] for your data. Your dataset will specify the correct coordinate system under the <span style="font-weight: bold;">UTMDatumZone</span> column. If your data set does not so specify, the most common coordinate systems for North American data are <span style="font-weight: bold;">NAD27</span> (North American Datum, 1927) <span style="font-weight: bold;">NAD83</span> (North American Datum 1983), and <span style="font-weight: bold;">WGS84</span>; best practice for SGD uses the <span style="font-weight: bold;">WGS84</span> (World Geodetic System 1984). If your data corresponds with features in North America and no coordinate system is provided under the <span style="font-weight: bold;">UTMDatumZone</span> field in your data set, it should be safe to use one of the three; some degree of trial-and-error could be necessary.
+		<p style="text-align: center;"><img alt="Select your coordinate system" src="../../sites/usgin.org/files/ws-arc-srp.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 15: Select your coordinate system</p>
+</li>
+<li>
+		Clicking <span style="font-weight: bold;">Edit</span> will bring the <span style="font-weight: bold;">Spatial Reference Properties</span> window (Figure 15). Click <span style="font-weight: bold;">Select</span> to manually choose a coordinate system for your data. Clicking <span style="font-weight: bold;">Select</span> will bring up a window in which you can choose from two folders (Figure 16): <span style="font-weight: bold;">Geographic Coordinate Systems</span> and <span style="font-weight: bold;">Projected Coordinate Systems</span>. Select <span style="font-weight: bold;">Geographic Coordinate Systems</span> and click <span style="font-weight: bold;">Add</span>.
+		<p style="text-align: center;"><img alt="Browsing for coordinate systems" src="../../sites/usgin.org/files/ws-arc-browse_coordinates.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 16: Browsing for coordinate systems</p>
+</li>
+<li>
+		Selecting <span style="font-weight: bold;">Geographic Coordinate Systems</span> and clicking <span style="font-weight: bold;">Add</span> in the <span style="font-weight: bold;">Browse for Coordinate System</span> window (Figure 16) will bring you to a directory in which you must choose the country of origin of your coordinate system. If you are using the NAD 27 or NAD 83 coordinate system, the country of origin of these coordinate systems would be <span style="font-weight: bold;">North America</span>. If you are using the WGS84 coordinate system, the source would be <span style="font-weight: bold;">World</span> Select the folder that corresponds with the country of origin for your coordinate system and click <strong>Add</strong>.
+		<p style="text-align: center;"><img alt="Coordinate systems" src="../../sites/usgin.org/files/ws-arc-coordinates.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 17: Coordinate systems</p>
+</li>
+<li>
+		Selecting a coordinate system and click <span style="font-weight: bold;">Add</span> in the <span style="font-weight: bold;">Browse for Coordinate Systems</span> window depicted in Figure 17 will bring you back to the <span style="font-weight: bold;">Spatial Reference Properties</span> window in Figure 15, but the appearance of the window will have changed to reflect the coordinate system you selected (Figure 18). Click <span style="font-weight: bold;">OK</span> to continue.
+		<p style="text-align: center;"><img alt="The Spatial Reference Properties window with a coordinate system selected" src="../../sites/usgin.org/files/ws-arc-srp2.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 18: The <span style="font-weight: bold;">Spatial Reference Properties</span> window with a coordinate system selected</p>
+</li>
+<li>
+		Clicking OK in the <strong>Spatial Reference Properties </strong>window in Figure 18 will bring you to the <strong>Display XY Data </strong>window in Figure 14, but this window will likewise be changed to reflect your newly selected coordinate system (Figure 19)
+		<p style="text-align: center;"><img alt="Displaying XY data with a coordinate system selected" src="../../sites/usgin.org/files/ws-arc-xydata3.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 19: Displaying XY data with a coordinate system selected</p>
+</li>
+<li>
+		Click <span style="font-weight: bold;">OK</span>. With luck, your data should now display in the <span style="font-weight: bold;">Map</span> window of ArcMap (Figure 20). This is how your data will look when it goes live as a service.
+		<p style="text-align: center;"><img alt="Coordinates diplaying properly" src="../../sites/usgin.org/files/ws-arc-map_window.PNG" style="float: inherit; width: 100%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 20: Coordinates displaying properly</p>
+</li>
+<li>
+		Before you can save your map, you need to adjust the properties of your newly created data. Right-click on your data and click <span style="font-weight: bold;">Properties</span> (Figure 21).
+		<p style="text-align: center;"><img alt="Layer properties" src="../../sites/usgin.org/files/ws-arc-properties.png" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 21: Layer properties</p>
+</li>
+<li>
+		Clicking <span style="font-weight: bold;">Properties</span> will bring up the <span style="font-weight: bold;">Layer Properties</span> window (Figure 22). Under the <span style="font-weight: bold;">General</span> tab, provide the basic information about your dataset, including a description and credits. Under the <span style="font-weight: bold;">Symbology</span> tab, you will need to alter the legend to coincide with SGD standards. When finished, click <span style="font-weight: bold;">OK</span>.
+		<p style="text-align: center;"><img alt="The Layer Properties window" src="../../sites/usgin.org/files/ws-arc-properties_window.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 22: The <span style="font-weight: bold;">Layer Properties</span> window</p>
+</li>
+<li>
+		Under the <span style="font-weight: bold;">File</span> menu, at the top of the screen, click <span style="font-weight: bold;">Map Document Properties</span> (Figure 23). Fill out all summary information; also, make sure you set the <span style="font-weight: bold;">Default Geodatabase</span> to the one containing your data, and check <span style="font-weight: bold;">Store Relative Pathnames to Data Sources</span>.
+		<p style="text-align: center;"><img alt="Coordinates diplaying properly" src="../../sites/usgin.org/files/ws-arc-map_properties.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 23: The <span style="font-weight: bold;">Map Properties</span> window</p>
+</li>
+<li>
+		Under the <span style="font-weight: bold;">File</span> menu at the top of the screen, click <span style="font-weight: bold;">Save</span>, and then specify a location on your computer. <span style="font-weight: bold;">Best practice is to save your map as a .mxd file in proximity to your geodatabase</span>. For example, if your geodatabase was located under
+		<dl style="font-family: monospace; font-size:125%;">
+<dd>
+				C:\Data\Borehole_Data\CA_Borehole_Data\Data</dd>
+</dl>
+<p>then best practice would be to either save your .mxd file in the same folder, or in</p>
+<dl style="font-family: monospace; font-size:125%;">
+<dd>
+				C:\Data\Borehole_Data\CA_Borehole_Data\Project</dd>
+</dl>
+</li>
+</ol>
+<p>Remember: the appearance of your map file determines the appearance of your data when it goes live. What you see is what you get.</p>
+<p>Continue the tutorial by clicking the links below.</p>
+</div></div></div> <footer class="book-navigation" id="book-navigation-42">
+<div class="page-links clearfix">
+<a class="page-up" href="../../content/usgin-web-services-tutorial/index.html" title="Go to parent page">up</a>
+</div>
+</footer>
+</div>
+</div>
+</article>
+</div> </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="container clearfix">
+<footer class="clearfix" role="contentinfo">
+<div class="region region-footer"><div class="region-inner clearfix"><div class="block block-block no-title odd first last block-count-3 block-region-footer block-14" id="block-block-14"><div class="block-inner clearfix">
+<div class="block-content content"><p><span style="font-size: 10px;">Funding for the USGIN initiative provided by the National Science Foundation <a href="http://nsf.gov">http://nsf.gov</a> under NSF award number EAR-0753154, as part of the <a href="http://www.nsf.gov/pubs/2007/nsf07565/nsf07565.pdf" target="_blank">INTEROP initiative</a>. The USGIN initiative is managed by the Arizona Geological Survey (AZGS) [Dead Link, http://azgs.az.gov] on behalf of the <a href="http://www.stategeologists.org/" target='_"blank"'>Association of American State Geologists (AASG)</a>. Some USGIN documents and products were developed for use by the National Geothermal Data System [Dead Link, http://www.geothermaldata.org] (NGDS), which is powered by USGIN; these materials are supported by the <a href="http://www.energy.gov" target="_blank">Department of Energy</a> under grants EE-0002850 and EE-0001120 awarded to the AASG and <a href="http://www.boisestate.edu/" target="_blank">Boise State University</a>, respectively.</span></p>
+</div>
+</div></div></div></div> </footer>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

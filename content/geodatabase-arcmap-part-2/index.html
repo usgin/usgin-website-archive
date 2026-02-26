@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html dir="ltr" version="XHTML+RDFa 1.0" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta about="/content/geodatabase-arcmap-part-2" content="From Geodatabase to ArcMap, Part 2" property="dc:title"/>
+<meta about="/content/geodatabase-arcmap-part-2" content="0" datatype="xsd:integer" property="sioc:num_replies"/>
+<link href="../../sites/usgin.org/files/USGIN_logo-relief-icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<link href="../going-live/index.html" rel="next"/>
+<link href="../geodatabase-arcmap-part-1/index.html" rel="prev"/>
+<meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+<link href="index.html" rel="canonical"/>
+<link href="../../node/47/index.html" rel="shortlink"/>
+<link href="../usgin-web-services-tutorial/index.html" rel="up"/>
+<title>From Geodatabase to ArcMap, Part 2 | USGIN</title>
+<link href="../../sites/usgin.org/files/css/css_CKoWqiBj9gVXhPuDSnNphuEB0b0J2To76x0pX0EGqn4.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_C5qScmQIv34EyxHOR8kn3k27hINZSu6NT9JpBRdauLg.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_E95tmU3JQpgi3lzS2gJ8kKsRAG4WALhFDopKuAmv3ko.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_CiRTRM4rYg4KWTxlZgiIVey0Cp0b9CVnwj_Po312Vnw.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../sites/usgin.org/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/themes/bartik/css/ie.css?m6mjig" media="all" />
+<![endif]-->
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://usgin.org/themes/bartik/css/ie6.css?m6mjig" media="all" />
+<![endif]-->
+<script src="../../sites/usgin.org/files/js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js" type="text/javascript"></script>
+<script src="../../sites/usgin.org/files/js/js_o8jeAKu4mzvjagFkFrKLQQ9nZhfkwMCbwbAnQNUaxTI.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33141825-1"]);_gaq.push(["_setDomainName", ".usgin.org"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"bartik", "theme_token":"NSb7f_I2v3zAMKqzDQhx4VPwnaLO4ZfnePEJeyZpIR4", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fjs\u002Fpanels.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fjs\u002Fviews_slideshow.js":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.js":1, "sites\u002Fall\u002Fmodules\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "modules\u002Faggregator\u002Faggregator.css":1, "modules\u002Fbook\u002Fbook.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "sites\u002Fall\u002Fmodules\u002Fdate\u002Fdate_repeat_field\u002Fdate_repeat_field.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "modules\u002Fnode\u002Fnode.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fckeditor\u002Fckeditor.css":1, "sites\u002Fall\u002Fmodules\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fpanels\u002Fcss\u002Fpanels.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow\u002Fviews_slideshow.css":1, "sites\u002Fall\u002Fmodules\u002Fviews_slideshow_xtra\u002Fviews_slideshow_xtra.css":1, "themes\u002Fbartik\u002Fcss\u002Flayout.css":1, "themes\u002Fbartik\u002Fcss\u002Fstyle.css":1, "themes\u002Fbartik\u002Fcss\u002Fcolors.css":1, "themes\u002Fbartik\u002Fcss\u002Fprint.css":1, "themes\u002Fbartik\u002Fcss\u002Fie.css":1, "themes\u002Fbartik\u002Fcss\u002Fie6.css":1}}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip", "trackOutboundAsPageview":1, "trackDomainMode":"1"}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-47 node-type-book">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<div id="page-wrapper"><div id="page">
+ <!-- /.section, /#header -->
+<div class="clearfix" id="main-wrapper"><div class="clearfix" id="main">
+
+ <!-- /.section, /#sidebar-first -->
+<div class="column" id="content"><div class="section">
+<a id="main-content"></a>
+<h1 class="title" id="page-title">
+          From Geodatabase to ArcMap, Part 2        </h1>
+<div class="tabs">
+</div>
+<div class="region region-content">
+<div class="block block-system" id="block-system-main">
+<div class="content">
+<div about="/content/geodatabase-arcmap-part-2" class="node node-book node-full clearfix" id="node-47" typeof="sioc:Item foaf:Document">
+<div class="content clearfix">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Your data will appear in the Layers panel on the left side of the screen. In order to display the data points within this data, you must first tell ArcMap what <a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/003r00000001000000.htm" target="_blank">projection</a> to use for your <a href="../glossary/index.html">data</a>, and which <a href="../glossary/index.html">fields</a> within your dataset contain the latitude and longitude coordinates.</p>
+<ol>
+<li>
+		Right-click on your data. In the menu that apears (Figure 13), click <span style="font-weight: bold;">Display XY Data</span>
+<p style="text-align: center;"><img alt="Displaying XY Data" src="../../sites/usgin.org/files/ws-arc-data.png" style="float: inherit; width: 100%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 13:Displaying XY Data</p>
+</li>
+<li>
+		In the <span style="font-weight: bold;">Display XY Data</span> window that appears (Figure 14), make sure that your <strong>X</strong> and <strong>Y</strong> fields correspond with the <a href="../glossary/index.html">database fields</a> in your database that contain the latitude and longitude information for your data. <span style="font-weight: bold;">Warning</span>: errors sometimes occur, so it’s possible you may have the right data in the wrong field. If your data does not display correctly, don’t be afraid to experiment with the <span style="font-weight: bold;">X Field</span> and <span style="font-weight: bold;">Y Field</span> options in order to find the right combination.
+		<p style="text-align: center;"><img alt="XY Data" src="../../sites/usgin.org/files/ws-arc-xydata.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 14: XY Data</p>
+</li>
+<li>
+		After you have specified your <strong>X Field</strong> and your <strong>Y Field</strong>, click <span style="font-weight: bold;">Edit</span> to specify the coordinate system [Dead Link, http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html/content/glossary#//003r00000001000000.htm] for your data. Your dataset will specify the correct coordinate system under the <span style="font-weight: bold;">UTMDatumZone</span> column. If your data set does not so specify, the most common coordinate systems for North American data are <span style="font-weight: bold;">NAD27</span> (North American Datum, 1927) <span style="font-weight: bold;">NAD83</span> (North American Datum 1983), and <span style="font-weight: bold;">WGS84</span>; best practice for SGD uses the <span style="font-weight: bold;">WGS84</span> (World Geodetic System 1984). If your data corresponds with features in North America and no coordinate system is provided under the <span style="font-weight: bold;">UTMDatumZone</span> field in your data set, it should be safe to use one of the three; some degree of trial-and-error could be necessary.
+		<p style="text-align: center;"><img alt="Select your coordinate system" src="../../sites/usgin.org/files/ws-arc-srp.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 15: Select your coordinate system</p>
+</li>
+<li>
+		Clicking <span style="font-weight: bold;">Edit</span> will bring the <span style="font-weight: bold;">Spatial Reference Properties</span> window (Figure 15). Click <span style="font-weight: bold;">Select</span> to manually choose a coordinate system for your data. Clicking <span style="font-weight: bold;">Select</span> will bring up a window in which you can choose from two folders (Figure 16): <span style="font-weight: bold;">Geographic Coordinate Systems</span> and <span style="font-weight: bold;">Projected Coordinate Systems</span>. Select <span style="font-weight: bold;">Geographic Coordinate Systems</span> and click <span style="font-weight: bold;">Add</span>.
+		<p style="text-align: center;"><img alt="Browsing for coordinate systems" src="../../sites/usgin.org/files/ws-arc-browse_coordinates.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 16: Browsing for coordinate systems</p>
+</li>
+<li>
+		Selecting <span style="font-weight: bold;">Geographic Coordinate Systems</span> and clicking <span style="font-weight: bold;">Add</span> in the <span style="font-weight: bold;">Browse for Coordinate System</span> window (Figure 16) will bring you to a directory in which you must choose the country of origin of your coordinate system. If you are using the NAD 27 or NAD 83 coordinate system, the country of origin of these coordinate systems would be <span style="font-weight: bold;">North America</span>. If you are using the WGS84 coordinate system, the source would be <span style="font-weight: bold;">World</span> Select the folder that corresponds with the country of origin for your coordinate system and click <strong>Add</strong>.
+		<p style="text-align: center;"><img alt="Coordinate systems" src="../../sites/usgin.org/files/ws-arc-coordinates.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 17: Coordinate systems</p>
+</li>
+<li>
+		Selecting a coordinate system and click <span style="font-weight: bold;">Add</span> in the <span style="font-weight: bold;">Browse for Coordinate Systems</span> window depicted in Figure 17 will bring you back to the <span style="font-weight: bold;">Spatial Reference Properties</span> window in Figure 15, but the appearance of the window will have changed to reflect the coordinate system you selected (Figure 18). Click <span style="font-weight: bold;">OK</span> to continue.
+		<p style="text-align: center;"><img alt="The Spatial Reference Properties window with a coordinate system selected" src="../../sites/usgin.org/files/ws-arc-srp2.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 18: The <span style="font-weight: bold;">Spatial Reference Properties</span> window with a coordinate system selected</p>
+</li>
+<li>
+		Clicking OK in the <strong>Spatial Reference Properties </strong>window in Figure 18 will bring you to the <strong>Display XY Data </strong>window in Figure 14, but this window will likewise be changed to reflect your newly selected coordinate system (Figure 19)
+		<p style="text-align: center;"><img alt="Displaying XY data with a coordinate system selected" src="../../sites/usgin.org/files/ws-arc-xydata3.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 19: Displaying XY data with a coordinate system selected</p>
+</li>
+<li>
+		Click <span style="font-weight: bold;">OK</span>. With luck, your data should now display in the <span style="font-weight: bold;">Map</span> window of ArcMap (Figure 20). This is how your data will look when it goes live as a service.
+		<p style="text-align: center;"><img alt="Coordinates diplaying properly" src="../../sites/usgin.org/files/ws-arc-map_window.PNG" style="float: inherit; width: 100%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 20: Coordinates displaying properly</p>
+</li>
+<li>
+		Before you can save your map, you need to adjust the properties of your newly created data. Right-click on your data and click <span style="font-weight: bold;">Properties</span> (Figure 21).
+		<p style="text-align: center;"><img alt="Layer properties" src="../../sites/usgin.org/files/ws-arc-properties.png" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 21: Layer properties</p>
+</li>
+<li>
+		Clicking <span style="font-weight: bold;">Properties</span> will bring up the <span style="font-weight: bold;">Layer Properties</span> window (Figure 22). Under the <span style="font-weight: bold;">General</span> tab, provide the basic information about your dataset, including a description and credits. Under the <span style="font-weight: bold;">Symbology</span> tab, you will need to alter the legend to coincide with SGD standards. When finished, click <span style="font-weight: bold;">OK</span>.
+		<p style="text-align: center;"><img alt="The Layer Properties window" src="../../sites/usgin.org/files/ws-arc-properties_window.PNG" style="float: inherit; width: 75%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 22: The <span style="font-weight: bold;">Layer Properties</span> window</p>
+</li>
+<li>
+		Under the <span style="font-weight: bold;">File</span> menu, at the top of the screen, click <span style="font-weight: bold;">Map Document Properties</span> (Figure 23). Fill out all summary information; also, make sure you set the <span style="font-weight: bold;">Default Geodatabase</span> to the one containing your data, and check <span style="font-weight: bold;">Store Relative Pathnames to Data Sources</span>.
+		<p style="text-align: center;"><img alt="Coordinates diplaying properly" src="../../sites/usgin.org/files/ws-arc-map_properties.PNG" style="float: inherit; width: 50%;"/></p>
+<p style="font-style: italic; font-size: small; text-align: center;">Figure 23: The <span style="font-weight: bold;">Map Properties</span> window</p>
+</li>
+<li>
+		Under the <span style="font-weight: bold;">File</span> menu at the top of the screen, click <span style="font-weight: bold;">Save</span>, and then specify a location on your computer. <span style="font-weight: bold;">Best practice is to save your map as a .mxd file in proximity to your geodatabase</span>. For example, if your geodatabase was located under
+		<dl style="font-family: monospace; font-size:125%;">
+<dd>
+				C:\Data\Borehole_Data\CA_Borehole_Data\Data</dd>
+</dl>
+<p>then best practice would be to either save your .mxd file in the same folder, or in</p>
+<dl style="font-family: monospace; font-size:125%;">
+<dd>
+				C:\Data\Borehole_Data\CA_Borehole_Data\Project</dd>
+</dl>
+</li>
+</ol>
+<p>Remember: the appearance of your map file determines the appearance of your data when it goes live. What you see is what you get.</p>
+<p>Continue the tutorial by clicking the links below.</p>
+</div></div></div> <div class="book-navigation" id="book-navigation-42">
+<div class="page-links clearfix">
+<a class="page-previous" href="../geodatabase-arcmap-part-1/index.html" title="Go to previous page">‹ From Geodatabase to ArcMap, Part 1</a>
+<a class="page-up" href="../usgin-web-services-tutorial/index.html" title="Go to parent page">up</a>
+<a class="page-next" href="../going-live/index.html" title="Go to next page">Going Live ›</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div> <!-- /.section, /#content -->
+</div></div> <!-- /#main, /#main-wrapper -->
+<div id="footer-wrapper"><div class="section">
+<div class="clearfix" id="footer">
+<div class="region region-footer">
+<div class="block block-block" id="block-block-14">
+<div class="content">
+<p><span style="font-size: 10px;">Funding for the USGIN initiative provided by the National Science Foundation <a href="http://nsf.gov">http://nsf.gov</a> under NSF award number EAR-0753154, as part of the <a href="http://www.nsf.gov/pubs/2007/nsf07565/nsf07565.pdf" target="_blank">INTEROP initiative</a>. The USGIN initiative is managed by the Arizona Geological Survey (AZGS) [Dead Link, http://azgs.az.gov] on behalf of the <a href="http://www.stategeologists.org/" target='_"blank"'>Association of American State Geologists (AASG)</a>. USGIN active partners include <a href="http://www.geongrid.org/" target="_blank">GEON</a> and <a href="http://www.earthchem.org/" target="_blank">EarthChem</a>.</span></p>
+</div>
+</div>
+</div>
+</div> <!-- /#footer -->
+</div></div> <!-- /.section, /#footer-wrapper -->
+</div></div> <!-- /#page, /#page-wrapper -->
+</body>
+</html>
